@@ -227,10 +227,10 @@ export default function Home() {
       {/* Text Content */}
       <div className="relative z-20 flex flex-col items-center justify-center text-center text-white h-full max-w-7xl mx-auto px-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-md">
-          श्री राधाकृष्ण गौ सेवा संस्थान - ग्राम डोंगर ,जिला – गुना (मध्य प्रदेश)
+          श्री राधाकृष्ण गौ सेवा संस्थान
         </h1>
         <p className="max-w-2xl text-lg md:text-xl mb-8 drop-shadow-md">
-          प्रेम, देखभाल और आध्यात्मिक भक्ति के माध्यम से गायों के संरक्षण और कल्याण के लिए समर्पित
+          ग्राम डोंगर,वार्ड क्रमांक 14,नगर पालिका राघौगढ़,जिला गुना (मध्य प्रदेश)
         </p>
         <Button
           className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg rounded-full "
@@ -870,13 +870,13 @@ export default function Home() {
                   <h3 className="text-xl font-semibold mb-4 text-orange-600">पहुंचने के निर्देश</h3>
                   <div className="space-y-2 mb-4">
                     <p className="text-gray-600">
-                      <span className="font-medium">रेलवे स्टेशन से:</span> मथुरा जंक्शन से ऑटो या टैक्सी द्वारा 15 मिनट की दूरी पर
+                      <span className="font-medium">सीएम राइज़ स्कूल के सामने</span> वार्ड क्रमांक 14 ,डोंगर
                     </p>
                     <p className="text-gray-600">
-                      <span className="font-medium">बस स्टैंड से:</span> मथुरा बस स्टैंड से 10 मिनट की दूरी पर
+                      <span className="font-medium">बस स्टैंड से:</span>5 मिनट की दूरी पर
                     </p>
                     <p className="text-gray-600">
-                      <span className="font-medium">दिल्ली से:</span> NH-2 मार्ग से लगभग 3.5 घंटे की दूरी पर
+                      <span className="font-medium">गुना से:</span> NH-4 मार्ग से लगभग 40km ,2 घंटे की दूरी पर
                     </p>
                   </div>
 
@@ -896,7 +896,7 @@ export default function Home() {
                           d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                         />
                       </svg>
-                      +91 98765 43210, +91 98765 43211
+                      +91 6264535229
                     </p>
                     <p className="text-gray-600 flex items-center">
                       <svg

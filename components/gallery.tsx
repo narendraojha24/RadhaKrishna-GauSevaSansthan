@@ -12,16 +12,16 @@ export default function Gallery() {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
 
   const images = [
-    { src: "i7.jpg", alt: "गौशाला में गायें" },
-    { src: "i2.jpg", alt: "गायों को खिलाना" },
-    { src: "i6.jpg", alt: "गायों का चिकित्सा उपचार" },
-    { src: "i4.jpg", alt: "स्वयंसेवक गायों के साथ" },
-    { src: "i1.jpg", alt: "आध्यात्मिक समारोह" },
-    { src: "i8.jpg", alt: "खेत में खेलती गाय" },
-    { src: "i9.jpg", alt: "गौशाला का अवलोकन" },
-    { src: "i11.jpg", alt: "जागरूकता अभियान" },
-     { src: "i12.jpg", alt: "जागरूकता अभियान" },
-      { src: "i10.jpg", alt: "जागरूकता अभियान" },
+    { src: "i7.jpg", alt: "" },
+    { src: "i2.jpg", alt: "" },
+    { src: "i6.jpg", alt: "" },
+    { src: "i4.jpg", alt: "" },
+    { src: "i1.jpg", alt: "" },
+    { src: "i8.jpg", alt: "" },
+    { src: "i9.jpg", alt: "" },
+    { src: "i11.jpg", alt: "" },
+     { src: "i12.jpg", alt: "" },
+      { src: "i10.jpg", alt: "" },
   ]
 
   const videos = [
@@ -90,7 +90,7 @@ export default function Gallery() {
           </div>
 
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
-            <DialogContent className="max-w-4xl p-0 overflow-hidden bg-black/90">
+            <DialogContent className="max-w-4xl p-0 overflow-hidden bg-white/90">
               <div className="relative h-[80vh] w-full">
                 <Image
                   src={images[currentImageIndex].src || "/placeholder.svg"}
@@ -104,7 +104,7 @@ export default function Gallery() {
                     e.stopPropagation()
                     prevImage()
                   }}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 rounded-full p-2 transition-colors"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white/40 rounded-full p-2 transition-colors"
                 >
                   <ChevronLeft className="h-6 w-6 text-white" />
                 </button>
@@ -114,7 +114,7 @@ export default function Gallery() {
                     e.stopPropagation()
                     nextImage()
                   }}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 rounded-full p-2 transition-colors"
+                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white/40 rounded-full p-2 transition-colors"
                 >
                   <ChevronRight className="h-6 w-6 text-white" />
                 </button>

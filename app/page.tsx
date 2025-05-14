@@ -227,7 +227,7 @@ export default function Home() {
       {/* Text Content */}
       <div className="relative z-20 flex flex-col items-center justify-center text-center text-white h-full max-w-7xl mx-auto px-4">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 drop-shadow-md">
-          श्री राधाकृष्ण गौ सेवा संस्थान - पवित्र गौमाता की सेवा में समर्पित
+          श्री राधाकृष्ण गौ सेवा संस्थान - ग्राम डोंगर ,जिला – गुना (मध्य प्रदेश)
         </h1>
         <p className="max-w-2xl text-lg md:text-xl mb-8 drop-shadow-md">
           प्रेम, देखभाल और आध्यात्मिक भक्ति के माध्यम से गायों के संरक्षण और कल्याण के लिए समर्पित
@@ -262,7 +262,7 @@ export default function Home() {
       </div>
     </div>
 
-    
+
         {/* Hero Section 
         <section className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-600/70 to-green-700/70 z-10" />
@@ -442,7 +442,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-1 text-orange-600">श्री गिरधर गोपाल शर्मा </h3>
                 <p className="text-sm text-green-600 mb-3">संरक्षक एवं मार्गदर्शक</p>
                 <p className="text-gray-600 text-sm">
-                  30 वर्षों से गौ सेवा में समर्पित, श्री शर्मा जी ने 2005 में इस संस्थान की स्थापना की और तब से हजारों गायों की रक्षा की है।
+                  
                 </p>
               </div>
 
@@ -459,7 +459,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-1 text-orange-600">श्री राधेश्याम मीना </h3>
                 <p className="text-sm text-green-600 mb-3"> अध्यक्ष</p>
                 <p className="text-gray-600 text-sm">
-                  15 वर्षों के अनुभव के साथ, डॉ. देवी हमारी गौशाला में सभी गायों के स्वास्थ्य और कल्याण की देखभाल करती हैं।
+                  
                 </p>
               </div>
 
@@ -476,7 +476,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-1 text-orange-600"> श्री राधेश्याम ओझा</h3>
                 <p className="text-sm text-green-600 mb-3">उपाध्यक्ष</p>
                 <p className="text-gray-600 text-sm">
-                  एक अनुभवी वित्तीय विशेषज्ञ, श्री गोयल संस्थान के वित्तीय मामलों का प्रबंधन करते हैं और पारदर्शिता सुनिश्चित करते हैं।
+                  
                 </p>
               </div>
 
@@ -493,7 +493,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-1 text-orange-600"> श्री सुमेर सिंह किरार</h3>
                 <p className="text-sm text-green-600 mb-3">कोषाध्यक्ष</p>
                 <p className="text-gray-600 text-sm">
-                  श्रीमती वर्मा हमारे 200+ स्वयंसेवकों का प्रबंधन करती हैं और गौशाला में दैनिक गतिविधियों का समन्वय करती हैं।
+                 
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
@@ -509,7 +509,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-1 text-orange-600"> डॉ. जितेन्द्र जैन</h3>
                 <p className="text-sm text-green-600 mb-3">सचिव</p>
                 <p className="text-gray-600 text-sm">
-                  श्रीमती वर्मा हमारे 200+ स्वयंसेवकों का प्रबंधन करती हैं और गौशाला में दैनिक गतिविधियों का समन्वय करती हैं।
+                  
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
@@ -525,7 +525,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-1 text-orange-600"> श्री रघुवीर सिंह केवट</h3>
                 <p className="text-sm text-green-600 mb-3">स्वयंसेवक समन्वयक</p>
                 <p className="text-gray-600 text-sm">
-                  श्रीमती वर्मा हमारे 200+ स्वयंसेवकों का प्रबंधन करती हैं और गौशाला में दैनिक गतिविधियों का समन्वय करती हैं।
+                 
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
@@ -541,7 +541,7 @@ export default function Home() {
                 <h3 className="text-xl font-semibold mb-1 text-orange-600"> श्री गिरधर गोपाल मीना</h3>
                 <p className="text-sm text-green-600 mb-3">स्थायी सदस्य</p>
                 <p className="text-gray-600 text-sm">
-                  श्रीमती वर्मा हमारे 200+ स्वयंसेवकों का प्रबंधन करती हैं और गौशाला में दैनिक गतिविधियों का समन्वय करती हैं।
+                  
                 </p>
               </div>
             </div>

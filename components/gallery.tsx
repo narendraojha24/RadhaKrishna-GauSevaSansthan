@@ -12,31 +12,31 @@ export default function Gallery() {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
 
   const images = [
-    { src: "/placeholder.svg?height=400&width=600", alt: "गौशाला में गायें" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "गायों को खिलाना" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "गायों का चिकित्सा उपचार" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "स्वयंसेवक गायों के साथ" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "आध्यात्मिक समारोह" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "खेत में खेलती गाय" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "गौशाला का अवलोकन" },
-    { src: "/placeholder.svg?height=400&width=600", alt: "जागरूकता अभियान" },
+    { src: "i7.jpg", alt: "गौशाला में गायें" },
+    { src: "i2.jpg", alt: "गायों को खिलाना" },
+    { src: "i6.jpg", alt: "गायों का चिकित्सा उपचार" },
+    { src: "i4.jpg", alt: "स्वयंसेवक गायों के साथ" },
+    { src: "i1.jpg", alt: "आध्यात्मिक समारोह" },
+    { src: "i8.jpg", alt: "खेत में खेलती गाय" },
+    { src: "i9.jpg", alt: "गौशाला का अवलोकन" },
+    { src: "i11.jpg", alt: "जागरूकता अभियान" },
+     { src: "i12.jpg", alt: "जागरूकता अभियान" },
+      { src: "i10.jpg", alt: "जागरूकता अभियान" },
   ]
 
   const videos = [
-  { thumbnail: "/video1.mp4", title: "हमारी गौशाला में एक दिन" },
-  { thumbnail: "/video2.mp4", title: "गौ आहार समारोह" },
-  { thumbnail: "/video3.mp4", title: "स्वयंसेवक अनुभव" },
-  { thumbnail: "/video4.mp4", title: "गायों के साथ आध्यात्मिक संबंध" },
-  { thumbnail: "/video5.mp4", title: "गायों के साथ आध्यात्मिक संबंध" },
-   { thumbnail: "/video6.mp4", title: "गायों के साथ आध्यात्मिक संबंध" },
-    { thumbnail: "/video7.mp4", title: "गायों के साथ आध्यात्मिक संबंध" },
-     { thumbnail: "/video8.mp4", title: "गायों के साथ आध्यात्मिक संबंध" },
-      { thumbnail: "/video9.mp4", title: "गायों के साथ आध्यात्मिक संबंध" },
-       { thumbnail: "/video10.mp4", title: "गायों के साथ आध्यात्मिक संबंध" },
-        { thumbnail: "/video11.mp4", title: "गायों के साथ आध्यात्मिक संबंध" },
-         { thumbnail: "/video12.mp4", title: "गायों के साथ आध्यात्मिक संबंध" },
-          { thumbnail: "/video13.mp4", title: "गायों के साथ आध्यात्मिक संबंध" },
-           { thumbnail: "/video14.mp4", title: "गायों के साथ आध्यात्मिक संबंध" },
+  { thumbnail: "/video1.mp4", title: "" },
+  { thumbnail: "/video2.mp4", title: "" },
+  { thumbnail: "/video3.mp4", title: "" },
+  { thumbnail: "/video5.mp4", title: "" },
+   { thumbnail: "/video6.mp4", title: "" },
+    { thumbnail: "/video7.mp4", title: "" },
+     { thumbnail: "/video8.mp4", title: "" },
+      { thumbnail: "/video9.mp4", title: "" },
+       { thumbnail: "/video10.mp4", title: "" },
+        { thumbnail: "/video11.mp4", title: "" },
+         { thumbnail: "/video12.mp4", title: "" },
+          { thumbnail: "/video13.mp4", title: "" },
 ]
 
   const nextImage = () => {

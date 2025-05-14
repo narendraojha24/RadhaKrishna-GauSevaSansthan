@@ -432,7 +432,7 @@ export default function Home() {
               <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <Image
-                    src="/placeholder.svg?height=100&width=100"
+                    src="sharmaji.jpg"
                     alt="श्री रामकृष्ण शर्मा"
                     width={100}
                     height={100}
@@ -499,7 +499,7 @@ export default function Home() {
               <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <Image
-                    src="/placeholder.svg?height=100&width=100"
+                    src="dr.jpg"
                     alt="श्रीमती राधिका वर्मा"
                     width={100}
                     height={100}
@@ -531,7 +531,7 @@ export default function Home() {
               <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <Image
-                    src="/placeholder.svg?height=100&width=100"
+                    src="girdhar.jpg"
                     alt="श्रीमती राधिका वर्मा"
                     width={100}
                     height={100}
@@ -600,7 +600,7 @@ export default function Home() {
               <Card className="overflow-hidden border-2 border-green-100 hover:border-green-300 transition-colors">
                 <div className="aspect-video relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=600"
+                    src="ii1.jpg"
                     alt="Awareness campaigns"
                     fill
                     className="object-cover"
@@ -993,7 +993,7 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-semibold mb-4">संस्थान के बारे में</h3>
               <p className="text-orange-200 mb-4">
-                राधा कृष्ण गौ सेवा संस्थान प्रेम, देखभाल और आध्यात्मिक भक्ति के माध्यम से गायों के संरक्षण और कल्याण के लिए समर्पित है।
+                राधाकृष्ण गौ सेवा संस्थान प्रेम, देखभाल और आध्यात्मिक भक्ति के माध्यम से गायों के संरक्षण और कल्याण के लिए समर्पित है।
               </p>
               <div className="flex space-x-4">
                 <Link href="#" className="text-white hover:text-orange-200">

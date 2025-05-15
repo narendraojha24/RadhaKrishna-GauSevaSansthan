@@ -26,7 +26,7 @@ import { useEffect } from "react"
 
 import { useState } from 'react';// adjust this import as needed
 
-const images = ['cow3.jpeg', 'cow1.jpeg', 'cow2.jpeg', 'cow3.jpeg', 'cow4.jpeg'];
+const images = ['i3.jpg', 'i5.jpg', 'i6.jpg', 'i1.jpg', 'i2.jpg'];
 
 const galleryImages = Array.from({ length: 20 }, (_, i) => `/gallery/image${i + 1}.jpeg`);// Put your images in public/gallery/
 

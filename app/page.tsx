@@ -28,8 +28,6 @@ import { useState } from 'react';// adjust this import as needed
 
 const images = ['i3.jpg', 'i5.jpg', 'i6.jpg', 'i1.jpg', 'i2.jpg'];
 
-const galleryImages = Array.from({ length: 20 }, (_, i) => `/gallery/image${i + 1}.jpeg`);// Put your images in public/gallery/
-
 
 export default function Home() {
 
@@ -244,24 +242,6 @@ export default function Home() {
     </section>
 
 
-     <div className="w-full overflow-hidden bg-white py-6 mt-10">
-      <div className="flex scroll-horizontal w-max gap-6">
-        {/* Repeat the row twice for infinite effect */}
-        {[...Array(2)].map((_, repeatIndex) =>
-          images.map((src, index) => (
-            <div key={`${repeatIndex}-${index}`} className="relative w-[180px] h-[120px]">
-              <Image
-                src={src}
-                alt={`gallery-img-${index}`}
-                fill
-                className="object-cover rounded-lg"
-              />
-            </div>
-          ))
-        )}
-      </div>
-    </div>
-
 
         {/* Hero Section 
         <section className="relative">
@@ -417,6 +397,7 @@ export default function Home() {
           </div>
         </section>
 
+
         {/* Team Section */}
         <section id="team" className="py-16">
           <div className="container">
@@ -547,6 +528,48 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Permanent Members Section */}
+<section id="permanent-members" className="py-16 bg-orange-50">
+  <div className="container">
+    <div className="text-center mb-12">
+      <h2 className="text-2xl font-bold text-orange-600 mb-4">स्थायी सदस्य</h2>
+      <p className="max-w-2xl mx-auto text-gray-600">
+        हमारे स्थायी सदस्य जो गौ सेवा के प्रति अपनी निष्ठा और समर्पण के लिए जाने जाते हैं।
+      </p>
+    </div>
+
+    <div className="bg-white p-6 rounded-lg shadow-md flex flex-col sm:flex-row gap-3 items-center">
+      <ul className="list-disc list-inside text-gray-800 space-y-2">
+        <li>श्री राजीव शर्मा</li>
+        <li>श्री जगदीश शिवहरी </li>
+        <li>श्री पुरुषोत्तम धाकड़</li>
+      </ul>
+      <ul className="list-disc list-inside text-gray-800 space-y-2">
+         <li>श्री रामलखन किरार</li>
+         <li>श्री राधेश्याम किरार </li>
+         <li>श्री पवन किरार</li>
+      </ul>
+       <ul className="list-disc list-inside text-gray-800 space-y-2">
+        
+        <li>श्री लक्ष्मी नारायण सैनी</li>
+        <li>श्री चिंटूलाल धाकड़</li>
+        <li>श्री विपिन किरार</li>
+      </ul>
+       <ul className="list-disc list-inside text-gray-800 space-y-2">
+        <li>श्री जगदीश धाकड़ </li>
+        <li>श्री इमरतलाल  किरार</li>
+        <li>श्री बंकेश मेहता</li>
+      </ul>
+      <ul className="list-disc list-inside text-gray-800 space-y-2">
+        
+        <li>श्री शिवराज मेहता</li>
+        <li>श्री लक्ष्मीनारायण सैनी</li>
+      </ul>
+      
+    </div>
+  </div>
+</section>
 
         {/* Our Services Section */}
         <section id="services" className="py-16">

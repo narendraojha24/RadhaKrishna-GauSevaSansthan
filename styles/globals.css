@@ -93,15 +93,3 @@ body {
   }
 }
 
-@@keyframes scroll-horizontal {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-.scroll-horizontal {
-  animation: scroll-horizontal 40s linear infinite;
-}

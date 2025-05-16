@@ -546,27 +546,24 @@ export default function Home() {
         <li>श्री पुरुषोत्तम धाकड़</li>
       </ul>
       <ul className="list-disc list-inside text-gray-800 space-y-2">
-         <li>श्री रामलखन किरार</li>
-         <li>श्री राधेश्याम किरार </li>
-         <li>श्री पवन किरार</li>
+        <li>श्री रामलखन किरार</li>
+        <li>श्री राधेश्याम किरार </li>
+        <li>श्री पवन किरार</li>
       </ul>
-       <ul className="list-disc list-inside text-gray-800 space-y-2">
-        
+       <ul className="list-disc list-inside text-gray-800 space-y-2">    
         <li>श्री लक्ष्मी नारायण सैनी</li>
         <li>श्री चिंटूलाल धाकड़</li>
         <li>श्री विपिन किरार</li>
-      </ul>
-       <ul className="list-disc list-inside text-gray-800 space-y-2">
+       </ul>
+      <ul className="list-disc list-inside text-gray-800 space-y-2">
         <li>श्री जगदीश धाकड़ </li>
         <li>श्री इमरतलाल  किरार</li>
         <li>श्री बंकेश मेहता</li>
       </ul>
       <ul className="list-disc list-inside text-gray-800 space-y-2">
-        
         <li>श्री शिवराज मेहता</li>
         <li>श्री लक्ष्मीनारायण सैनी</li>
-      </ul>
-      
+      </ul>    
     </div>
   </div>
 </section>
@@ -1106,17 +1103,10 @@ export default function Home() {
             </div>
 
             <div>
-              <h3 className="text-lg font-semibold mb-4">न्यूज़लेटर</h3>
+              <h3 className="text-lg font-semibold mb-4">"गौ सेवा ही सच्ची सेवा है"</h3>
               <p className="text-orange-200 mb-4">
-                हमारी गतिविधियों और कार्यक्रमों के बारे में अपडेट प्राप्त करने के लिए हमारे न्यूज़लेटर की सदस्यता लें।
+                हमारा विश्वास है कि गौ माता की सेवा के माध्यम से हम समाज, पर्यावरण और आत्मा—तीनों का कल्याण कर सकते हैं।
               </p>
-              <form className="space-y-2">
-                <Input
-                  placeholder="आपका ईमेल पता"
-                  className="bg-orange-800 border-orange-700 text-white placeholder:text-orange-300"
-                />
-                <Button className="w-full bg-orange-600 hover:bg-orange-700">सदस्यता लें</Button>
-              </form>
             </div>
           </div>
 

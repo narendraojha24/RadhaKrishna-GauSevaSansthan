@@ -203,7 +203,7 @@ export default function Home() {
 
       <main className="flex-1">
 
-
+      {/* hero section */}
          <section className="relative h-[70vh] overflow-hidden">
       {/* Background Images in Loop */}
       {images.map((img, index) => (
@@ -243,6 +243,61 @@ export default function Home() {
 
 
 
+{/* Animated Photo Gallery Section */}
+<section className="py-12">
+  <div className="container">
+    <h2 className="text-2xl font-bold text-orange-600 mb-6 text-center">हमारी झलकियाँ</h2>
+    <div className="overflow-hidden relative w-full">
+      <div
+        className="flex gap-6 animate-marquee"
+        style={{ width: "max-content" }}
+      >
+        {/* Repeat the images twice for seamless infinite scroll */}
+        {[...Array(2)].flatMap((_, repeatIdx) =>
+          [
+            "i1.jpg", "i2.jpg", "i3.jpg", "i4.jpg", "i5.jpg",
+            "i6.jpg", "i7.jpg", "i8.jpg", "i9.jpg", "i10.jpg",
+            "i11.jpg", "i12.jpg", "i13.jpg", "i14.jpg", "i15.jpg",
+            "i16.jpg", "i17.jpg", "i18.jpg", "i19.jpg", "i20.jpg"
+          ].map((img, idx) => (
+            <div
+              key={`${repeatIdx}-${idx}`}
+              className="flex-shrink-0 rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300"
+              style={{ width: 200, height: 140 }}
+            >
+              <Image
+                src={`/${img}`}
+                alt={`गैलरी छवि ${idx + 1}`}
+                width={200}
+                height={140}
+                className="object-cover w-full h-full"
+                priority={idx < 5}
+              />
+            </div>
+          ))
+        )}
+      </div>
+    </div>
+  </div>
+  {/* Marquee Animation CSS */}
+  <style jsx>{`
+    .animate-marquee {
+      animation: marquee 50s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @media (max-width: 640px) {
+      .animate-marquee > div {
+        width: 140px !important;
+        height: 100px !important;
+      }
+    }
+  `}</style>
+</section>
+
+
         {/* Hero Section 
         <section className="relative">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-600/70 to-green-700/70 z-10" />
@@ -269,6 +324,8 @@ export default function Home() {
             </Button>
           </div>
         </section>*/}
+
+
 
         {/* About Us Section */}
         <section id="about" className="py-16 bg-orange-50">
@@ -539,28 +596,28 @@ export default function Home() {
       </p>
     </div>
 
-    <div className="bg-white p-6 rounded-lg shadow-md flex flex-col sm:flex-row gap-3 items-center">
-      <ul className="list-disc list-inside text-gray-800 space-y-2">
+    <div className="bg-orange-500 p-6 rounded-lg shadow-md flex flex-col sm:flex-row gap-3 items-center">
+      <ul className="list-disc list-inside text-white space-y-2">
         <li>श्री राजीव शर्मा</li>
         <li>श्री जगदीश शिवहरी </li>
         <li>श्री पुरुषोत्तम धाकड़</li>
       </ul>
-      <ul className="list-disc list-inside text-gray-800 space-y-2">
+      <ul className="list-disc list-inside text-white space-y-2">
         <li>श्री रामलखन किरार</li>
         <li>श्री राधेश्याम किरार </li>
         <li>श्री पवन किरार</li>
       </ul>
-       <ul className="list-disc list-inside text-gray-800 space-y-2">    
+       <ul className="list-disc list-inside text-white space-y-2">    
         <li>श्री लक्ष्मी नारायण सैनी</li>
         <li>श्री चिंटूलाल धाकड़</li>
         <li>श्री विपिन किरार</li>
        </ul>
-      <ul className="list-disc list-inside text-gray-800 space-y-2">
+      <ul className="list-disc list-inside text-white space-y-2">
         <li>श्री जगदीश धाकड़ </li>
         <li>श्री इमरतलाल  किरार</li>
         <li>श्री बंकेश मेहता</li>
       </ul>
-      <ul className="list-disc list-inside text-gray-800 space-y-2">
+      <ul className="list-disc list-inside text-white space-y-2">
         <li>श्री शिवराज मेहता</li>
         <li>श्री लक्ष्मीनारायण सैनी</li>
       </ul>    

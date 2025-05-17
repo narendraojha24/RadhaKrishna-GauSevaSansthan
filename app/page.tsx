@@ -60,11 +60,13 @@ export default function Home() {
             <Image
               src="logo.jpeg"
               alt="Logo"
-              width={40}
-              height={40}
-              className="rounded-full"
+              width={50}
+              height={50}
+              className="rounded-full border-2 border-orange-600 object-cover aspect-square"
             />
-            <span className="text-xl font-bold text-orange-600">श्री राधाकृष्ण गौ सेवा संस्थान</span>
+          <span className="text-base sm:text-xl font-bold text-black whitespace-normal leading-tight xs:max-w-none">
+  श्री राधाकृष्ण गौ सेवा संस्थान
+</span>
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium hover:text-orange-600 transition-colors">

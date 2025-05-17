@@ -2,6 +2,9 @@
 
 import Image from "next/image"
 import Link from "next/link"
+
+import AOS from "aos"
+import "aos/dist/aos.css"
 import {
   ChevronRight,
   Heart,
@@ -51,6 +54,11 @@ export default function Home() {
       document.documentElement.style.scrollBehavior = ""
     }
   }, [])
+
+
+useEffect(() => {
+  AOS.init({ once: false, duration: 1200, mirror: true });
+}, []);
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -248,7 +256,7 @@ export default function Home() {
 {/* Animated Photo Gallery Section */}
 <section className="py-12">
   <div className="container">
-    <h2 className="text-2xl font-bold text-orange-600 mb-6 text-center">हमारी झलकियाँ</h2>
+    
     <div className="overflow-hidden relative w-full">
       <div
         className="flex gap-6 animate-marquee"
@@ -330,7 +338,7 @@ export default function Home() {
 
 
         {/* About Us Section */}
-        <section id="about" className="py-16 bg-orange-50">
+        <section id="about" className="py-16 bg-orange-50" data-aos="fade-in">
           <div className="container">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-orange-600 mb-4">हमारे बारे में</h2>
@@ -341,7 +349,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12" data-aos="fade-up">
               <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="h-8 w-8 text-orange-600" />
@@ -379,7 +387,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Leaf className="h-8 w-8 text-green-600" />
                 </div>
@@ -409,7 +417,7 @@ export default function Home() {
 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="h-8 w-8 text-orange-600" />
                 </div>
@@ -429,7 +437,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Calendar className="h-8 w-8 text-green-600" />
                 </div>
@@ -458,7 +466,7 @@ export default function Home() {
 
 
         {/* Team Section */}
-        <section id="team" className="py-16">
+        <section id="team" className="py-16" data-aos="fade-up">
           <div className="container">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-orange-600 mb-4">हमारी टीम</h2>
@@ -589,7 +597,7 @@ export default function Home() {
         </section>
 
         {/* Permanent Members Section */}
-<section id="permanent-members" className="py-16 bg-orange-50">
+<section id="permanent-members" className="py-16 bg-orange-50" data-aos="fade-up">
   <div className="container">
     <div className="text-center mb-12">
       <h2 className="text-2xl font-bold text-orange-600 mb-4">स्थायी सदस्य</h2>
@@ -628,7 +636,7 @@ export default function Home() {
 </section>
 
         {/* Our Services Section */}
-        <section id="services" className="py-16">
+        <section id="services" className="py-16" data-aos="fade-up">
           <div className="container">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-orange-600 mb-4">हमारी सेवाएं</h2>
@@ -720,7 +728,7 @@ export default function Home() {
         </section>
 
         {/* Donation Section*/}
-        <section id="donate" className="py-16 bg-gradient-to-r from-orange-50 to-green-50">
+        <section id="donate" className="py-16 bg-gradient-to-r from-orange-50 to-green-50" data-aos="fade-up">
          <div className="container">{/*
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-orange-600 mb-4">हमारे कार्य का समर्थन करें</h2>
@@ -819,7 +827,7 @@ export default function Home() {
         </section>
 
         {/* Gallery Section */}
-        <section id="gallery" className="py-16">
+        <section id="gallery" className="py-16" data-aos="fade-up">
           <div className="container">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-orange-600 mb-4">फोटो और वीडियो गैलरी</h2>
@@ -922,7 +930,7 @@ export default function Home() {
         </section>
 
         {/* Contact Us Section */}
-        <section id="contact" className="py-16 bg-gradient-to-r from-orange-50 to-green-50">
+        <section id="contact" className="py-16 bg-gradient-to-r from-orange-50 to-green-50" data-aos="fade-up">
           <div className="container">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-orange-600 mb-4">संपर्क करें</h2>
@@ -1066,7 +1074,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-orange-900 text-white py-12">
+      <footer className="bg-orange-900 text-white py-12" data-aos="fade-up">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>

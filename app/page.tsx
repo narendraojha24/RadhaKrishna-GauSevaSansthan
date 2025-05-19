@@ -230,7 +230,7 @@ useEffect(() => {
       ))}
 
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-orange-500/70 to-green-600/70 z-10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-orange-/70 to-green-300/70 z-10" />
 
       {/* Text Content */}
       <div className="relative z-20 flex flex-col items-center justify-center text-center text-white h-full max-w-7xl mx-auto px-4">
@@ -960,10 +960,10 @@ useEffect(() => {
                       <span className="font-medium">सीएम राइज़ स्कूल के सामने</span> वार्ड क्रमांक 14 ,डोंगर
                     </p>
                     <p className="text-gray-600">
-                      <span className="font-medium">बस स्टैंड से:</span>5 मिनट की दूरी पर
+                      <span className="font-medium">बस स्टैंड से : </span>5 मिनट की दूरी पर
                     </p>
                     <p className="text-gray-600">
-                      <span className="font-medium">गुना से:</span> NH-4 मार्ग से लगभग 40km ,2 घंटे की दूरी पर
+                      <span className="font-medium">गुना से : </span> NH-4 मार्ग से लगभग 40km, 2 घंटे की दूरी पर
                     </p>
                   </div>
 
@@ -983,7 +983,7 @@ useEffect(() => {
                           d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                         />
                       </svg>
-                      +91 6264535229
+                      +91 6264535229 , 9630048447
                     </p>
                     <p className="text-gray-600 flex items-center">
                       <svg

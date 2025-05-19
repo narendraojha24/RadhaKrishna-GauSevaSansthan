@@ -29,7 +29,7 @@ import { useEffect } from "react"
 
 import { useState } from 'react';// adjust this import as needed
 
-const images = ['i3.jpg', 'i5.jpg', 'i6.jpg', 'i1.jpg', 'i2.jpg'];
+const images = ['i6.jpg','i6.jpg'];
 
 
 export default function Home() {

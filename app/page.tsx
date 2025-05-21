@@ -1179,7 +1179,7 @@ useEffect(() => {
 
           <div className="border-t border-orange-800 pt-6 text-center">
             <p className="text-orange-200">
-              &copy; {new Date().getFullYear()} राधाकृष्ण गौ सेवा संस्थान। सर्वाधिकार सुरक्षित।
+              &copy; {new Date().getFullYear()} राधा कृष्ण गौ सेवा संस्थान। सर्वाधिकार सुरक्षित।
             </p>
           </div>
         </div>

@@ -49,7 +49,6 @@ export default function Gallery() {
     { thumbnail: "/video1.mp4", title: "" },
     { thumbnail: "/video2.mp4", title: "" },
     { thumbnail: "/video3.mp4", title: "" },
-    { thumbnail: "/video4.mp4", title: "" },
     { thumbnail: "/video5.mp4", title: "" },
     { thumbnail: "/video6.mp4", title: "" },
     { thumbnail: "/video7.mp4", title: "" },
@@ -57,6 +56,16 @@ export default function Gallery() {
     { thumbnail: "/video9.mp4", title: "" },
     { thumbnail: "/video10.mp4", title: "" },
     { thumbnail: "/video11.mp4", title: "" },
+    { thumbnail: "/video14 (1).mp4", title: "" },
+    { thumbnail: "/video14 (2).mp4", title: "" },
+    { thumbnail: "/video14 (3).mp4", title: "" },
+    { thumbnail: "/video14 (4).mp4", title: "" },
+    { thumbnail: "/video14 (5).mp4", title: "" },
+    { thumbnail: "/video14 (6).mp4", title: "" },
+    { thumbnail: "/video15 (1).mp4", title: "" },
+    { thumbnail: "/video15 (2).mp4", title: "" },
+    { thumbnail: "/video15 (3).mp4", title: "" },
+
 
     // ...your videos
   ]

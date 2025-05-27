@@ -649,7 +649,7 @@ useEffect(() => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card className="overflow-hidden border-2 border-orange-100 hover:border-orange-300 transition-colors">
                 <div className="aspect-video relative">
-                  <Image src="/placeholder.svg?height=300&width=600" alt="Cow shelter" fill className="object-cover" />
+                  <Image src="gallery1/g1 (13).jpg" alt="Cow shelter" fill className="object-cover" />
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-orange-600">गौ आश्रय और देखभाल (गौशाला)</h3>

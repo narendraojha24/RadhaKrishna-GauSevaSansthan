@@ -14,8 +14,8 @@ export default function Gallery() {
   // Example categories
   const categories = [
     { key: "gaushala", label: "गौशाला" },
-    { key: "events", label: "इवेंट्स" },
-    { key: "volunteers", label: "स्वयंसेवक" },
+    { key: "events", label: "वृक्षारोपण" },
+    { key: "volunteers", label: "निर्माण" },
     { key: "spiritual", label: "आध्यात्मिक" },
   ]
 

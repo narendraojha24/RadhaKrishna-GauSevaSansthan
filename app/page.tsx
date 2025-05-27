@@ -265,10 +265,10 @@ useEffect(() => {
         {/* Repeat the images twice for seamless infinite scroll */}
         {[...Array(2)].flatMap((_, repeatIdx) =>
           [
-            "i1.jpg", "i2.jpg", "i3.jpg", "i4.jpg", "i5.jpg",
-            "i6.jpg", "i7.jpg", "i8.jpg", "i9.jpg", "i10.jpg",
-            "i11.jpg", "i12.jpg", "i13.jpg", "i14.jpg", "i15.jpg",
-            "i16.jpg", "i17.jpg", "i18.jpg", "i19.jpg", "i20.jpg"
+            "gallery2/g2 (4).jpg", "gallery1/g1 (8).jpg", "gallery2/g2 (3).jpg", "gallery1/g1 (10).jpg", "gallery2/g2 (5).jpg",
+            "i6.jpg", "gallery2/g2 (11).jpg", "gallery1/g1 (19).jpg", "gallery2/g2 (9).jpg", "i10.jpg",
+            "i11.jpg", "gallery1/g1 (14).jpg", "gallery1/g1 (9).jpg", "gallery2/g2 (15).jpg", "gallery1/g1 (16).jpg",
+            "gallery1/g1 (11).jpg", "gallery2/g2 (26).jpg", "gallery1/g1 (7).jpg", "gallery2/g2 (18).jpg", "gallery2/g2 (13).jpg"
           ].map((img, idx) => (
             <div
               key={`${repeatIdx}-${idx}`}

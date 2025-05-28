@@ -1074,7 +1074,7 @@ useEffect(() => {
         </section>
       </main>
 
-      <footer className="bg-orange-900 text-white py-12" data-aos="fade-up">
+      <footer className="bg-orange-700 text-white py-12" data-aos="fade-up">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div>
@@ -1177,8 +1177,8 @@ useEffect(() => {
             </div>
           </div>
 
-          <div className="border-t border-orange-800 pt-6 text-center">
-            <p className="text-orange-200">
+          <div className="border-t border-white pt-6 text-center">
+            <p className="text-white">
               &copy; {new Date().getFullYear()} राधा कृष्ण गौ सेवा संस्थान। सर्वाधिकार सुरक्षित।
             </p>
           </div>

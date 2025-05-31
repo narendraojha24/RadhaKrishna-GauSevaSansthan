@@ -22,12 +22,8 @@ export default function Gallery() {
   // Example images for each category
   const imagesByCategory: Record<string, { src: string; alt: string }[]> = {
     gaushala: [
-      { src: "gallery1/g1 (1).jpg", alt: "गौशाला 1" },
-      { src: "gallery1/g1 (2).jpg", alt: "गौशाला 2" },
-      { src: "gallery1/g1 (3).jpg", alt: "गौशाला 3" },
-      { src: "gallery1/g1 (4).jpg", alt: "गौशाला 4" },
-      { src: "gallery1/g1 (5).jpg", alt: "गौशाला 5" },
-      { src: "gallery1/g1 (6).jpg", alt: "गौशाला 6" },
+       { src: "gallery1/g1 (16).jpg", alt: "गौशाला 16" },
+      { src: "gallery1/g1 (17).jpg", alt: "गौशाला 17" },
       { src: "gallery1/g1 (7).jpg", alt: "गौशाला 7" },
       { src: "gallery1/g1 (8).jpg", alt: "गौशाला 8" },
       { src: "gallery1/g1 (9).jpg", alt: "गौशाला 9" },
@@ -37,8 +33,7 @@ export default function Gallery() {
       { src: "gallery1/g1 (13).jpg", alt: "गौशाला 13" },
       { src: "gallery1/g1 (14).jpg", alt: "गौशाला 14" },
       { src: "gallery1/g1 (15).jpg", alt: "गौशाला 15" },
-      { src: "gallery1/g1 (16).jpg", alt: "गौशाला 16" },
-      { src: "gallery1/g1 (17).jpg", alt: "गौशाला 17" },
+     
       { src: "gallery1/g1 (18).jpg", alt: "गौशाला 18" },
       { src: "gallery1/g1 (19).jpg", alt: "गौशाला 19" },
       { src: "gallery1/g1 (20).jpg", alt: "गौशाला 20" },
@@ -48,6 +43,12 @@ export default function Gallery() {
       { src: "gallery1/g1 (24).jpg", alt: "गौशाला 24" },
       { src: "gallery1/g1 (25).jpg", alt: "गौशाला 25" },
       { src: "gallery1/g1 (26).jpg", alt: "गौशाला 26" }, 
+      { src: "gallery1/g1 (1).jpg", alt: "गौशाला 1" },
+      { src: "gallery1/g1 (2).jpg", alt: "गौशाला 2" },
+      { src: "gallery1/g1 (3).jpg", alt: "गौशाला 3" },
+      { src: "gallery1/g1 (4).jpg", alt: "गौशाला 4" },
+      { src: "gallery1/g1 (5).jpg", alt: "गौशाला 5" },
+      { src: "gallery1/g1 (6).jpg", alt: "गौशाला 6" },
     ],
     events: [
       { src: "gallery2/g2 (1).jpg", alt: "गौशाला 1" },

@@ -349,13 +349,13 @@ useEffect(() => {
               </p>
             </div>
 
-            <div className=" md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12" data-aos="fade-up">
+            <div className="md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12" data-aos="fade-up">
               <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
                 <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Heart className="h-8 w-8 text-orange-600" />
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">हमारा मिशन</h3>
-              <ol className="text-gray-600 text-xl list-decimal list-inside space-y-2 text-left" style={{ marginTop: "20px" }}>
+              <ol className="text-gray-600 list-decimal list-inside space-y-2 text-left" style={{ marginTop: "20px" }}>
     <li>बेसहारा गायों के लिए चारा, पानी एवं उनके ठहरने की उचित व्यवस्था करना।</li>
     <li>बीमार अथवा चोट ग्रस्त गायों की देखभाल करना तथा उन्हें यथा संभव चिकित्सीय उपचार की व्यवस्था करना।</li>
     <li>रोजगार एवं स्वरोजगार हेतु बेरोजगारों के रोजगारमूलक पाठ्यक्रम का संचालन करना एवं प्रशिक्षण शिविर लगाना।</li>
@@ -379,7 +379,7 @@ useEffect(() => {
                   <Leaf className="h-8 w-8 text-green-600" />
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">हमारा विज़न</h3>
-               <ol className="text-gray-600 text-xl list-decimal list-inside space-y-2 text-left" style={{ marginTop: "20px" }}>
+               <ol className="text-gray-600 list-decimal list-inside space-y-2 text-left" style={{ marginTop: "20px" }}>
   <li>गौ सेवा से ही मोक्ष की प्राप्ति होती है, यही हमारा संकल्प है।</li>
   <li>एक ऐसे आदर्श समाज की स्थापना करना जहाँ हर गौ माता को संरक्षण, सम्मान और सेवा मिले।</li>
   <li>गौमाता केवल एक पशु नहीं, बल्कि भारतीय संस्कृति और सनातन धर्म की आत्मा हैं।</li>
@@ -405,7 +405,7 @@ useEffect(() => {
                   <Users className="h-8 w-8 text-orange-600" />
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">हमारी टीम</h3>
-               <ol className="text-gray-600 text-xl list-decimal list-inside space-y-2 text-left" style={{ marginTop: "20px" }}>
+               <ol className="text-gray-600 list-decimal list-inside space-y-2 text-left" style={{ marginTop: "20px" }}>
   <li>
     आजीवन सदस्य – संस्था में जो व्यक्ति दान के रूप में 11000 (ग्यारह हजार) रुपये या अधिक प्रतिवर्ष देकर आजीवन सदस्य बन सकता है। दान राशि प्रतिवर्ष जमा करना अनिवार्य है।
   </li>
@@ -432,7 +432,7 @@ useEffect(() => {
                   <Calendar className="h-8 w-8 text-green-600" />
                 </div>
                 <h3 className="text-2xl font-semibold mb-2">हमारी यात्रा</h3>
-               <ol className="text-gray-600 text-xl list-decimal list-inside space-y-2 text-left" style={{ marginTop: "20px" }}>
+               <ol className="text-gray-600 list-decimal list-inside space-y-2 text-left" style={{ marginTop: "20px" }}>
   <li>
     "श्री राधा कृष्ण गौ सेवा संस्थान" की स्थापना वर्ष 2021 में एक पवित्र संकल्प के साथ की गई थी – गौ माता की सेवा, संरक्षण और संवर्धन के उद्देश्य से। यह संस्था न सिर्फ एक संगठन है, बल्कि एक भावना है, एक आंदोलन है, जो समाज को गौ माता के प्रति अपने कर्तव्यों और संस्कारों की ओर लौटने के लिए प्रेरित करता है।
   </li>

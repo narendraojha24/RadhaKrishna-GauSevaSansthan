@@ -477,7 +477,7 @@ useEffect(() => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <Image
                     src="sharmaji.jpg"
@@ -494,7 +494,7 @@ useEffect(() => {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <Image
                     src="radhemeena.jpg"
@@ -511,7 +511,7 @@ useEffect(() => {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <Image
                     src="ojhaaa.jpg"
@@ -528,7 +528,7 @@ useEffect(() => {
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <Image
                     src="/placeholder.svg?height=100&width=100"
@@ -544,7 +544,7 @@ useEffect(() => {
                  
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <Image
                     src="dr.jpg"
@@ -560,7 +560,7 @@ useEffect(() => {
                   
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <Image
                     src="/placeholder.svg?height=100&width=100"
@@ -576,7 +576,7 @@ useEffect(() => {
                  
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <Image
                     src="girdhar.jpg"
@@ -647,7 +647,7 @@ useEffect(() => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="overflow-hidden border-2 border-orange-100 hover:border-orange-300 transition-colors">
+              <Card className="overflow-hidden border-2 border-orange-100 hover:border-orange-300 transition-colors" data-aos="fade-right">
                 <div className="aspect-video relative">
                   <Image src="gallery1/g1 (13).jpg" alt="Cow shelter" fill className="object-cover" />
                 </div>
@@ -663,7 +663,7 @@ useEffect(() => {
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden border-2 border-green-100 hover:border-green-300 transition-colors">
+              <Card className="overflow-hidden border-2 border-green-100 hover:border-green-300 transition-colors" data-aos="fade-left">
                 <div className="aspect-video relative">
                   <Image
                     src="/placeholder.svg?height=300&width=600"
@@ -684,7 +684,7 @@ useEffect(() => {
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden border-2 border-green-100 hover:border-green-300 transition-colors">
+              <Card className="overflow-hidden border-2 border-green-100 hover:border-green-300 transition-colors" data-aos="fade-right">
                 <div className="aspect-video relative">
                   <Image
                     src="ii1.jpg"
@@ -704,7 +704,7 @@ useEffect(() => {
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden border-2 border-orange-100 hover:border-orange-300 transition-colors">
+              <Card className="overflow-hidden border-2 border-orange-100 hover:border-orange-300 transition-colors" data-aos="fade-left">
                 <div className="aspect-video relative">
                   <Image
                     src="/placeholder.svg?height=300&width=600"
@@ -1035,39 +1035,46 @@ useEffect(() => {
               <div className="bg-white p-8 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold mb-6 text-orange-600">हमें संदेश भेजें</h3>
 
-                <form className="space-y-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-medium">
-                        आपका नाम
-                      </label>
-                      <Input id="name" placeholder="अपना नाम दर्ज करें" />
-                    </div>
+                <form
+  className="space-y-4"
+  action="mailto:info@radhakrishnagauseva.org"
+  method="POST"
+  encType="text/plain"
+>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div className="space-y-2">
+      <label htmlFor="name" className="text-sm font-medium">
+        आपका नाम
+      </label>
+      <Input id="name" name="Name" placeholder="अपना नाम दर्ज करें" required />
+    </div>
 
-                    <div className="space-y-2">
-                      <label htmlFor="email" className="text-sm font-medium">
-                        ईमेल पता
-                      </label>
-                      <Input id="email" type="email" placeholder="अपना ईमेल दर्ज करें" />
-                    </div>
-                  </div>
+    <div className="space-y-2">
+      <label htmlFor="email" className="text-sm font-medium">
+        ईमेल पता
+      </label>
+      <Input id="email" name="Email" type="email" placeholder="अपना ईमेल दर्ज करें" required />
+    </div>
+  </div>
 
-                  <div className="space-y-2">
-                    <label htmlFor="subject" className="text-sm font-medium">
-                      विषय
-                    </label>
-                    <Input id="subject" placeholder="विषय दर्ज करें" />
-                  </div>
+  <div className="space-y-2">
+    <label htmlFor="subject" className="text-sm font-medium">
+      विषय
+    </label>
+    <Input id="subject" name="Subject" placeholder="विषय दर्ज करें" required />
+  </div>
 
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-medium">
-                      संदेश
-                    </label>
-                    <Textarea id="message" placeholder="अपना संदेश दर्ज करें" className="min-h-[120px]" />
-                  </div>
+  <div className="space-y-2">
+    <label htmlFor="message" className="text-sm font-medium">
+      संदेश
+    </label>
+    <Textarea id="message" name="Message" placeholder="अपना संदेश दर्ज करें" className="min-h-[120px]" required />
+  </div>
 
-                  <Button className="w-full bg-orange-600 hover:bg-orange-700">संदेश भेजें</Button>
-                </form>
+  <Button className="w-full bg-orange-600 hover:bg-orange-700" type="submit">
+    संदेश भेजें
+  </Button>
+</form>
               </div>
             </div>
           </div>

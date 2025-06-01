@@ -28,7 +28,7 @@ import { useEffect } from "react"
 
 import { useState } from 'react';// adjust this import as needed
 
-const images = ['i6.jpg','gallery1/g1 (14).jpg','gallery2/g2 (15).jpg'];
+const images = ['i6.jpg','gallery1/g1 (14).jpg','i13.jpg','gallery2/g2 (5).jpg']
 
 
 export default function Home() {

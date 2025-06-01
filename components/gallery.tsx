@@ -314,6 +314,7 @@ export default function Gallery() {
     { thumbnail: "/video15 (1).mp4", title: "" },
     { thumbnail: "/video15 (2).mp4", title: "" },
     { thumbnail: "/video15 (3).mp4", title: "" },
+    { thumbnail: "/video15.mp4", title: "" },
      { thumbnail: "/video1.mp4", title: "" },
 
 

@@ -2,7 +2,6 @@
 
 import Image from "next/image"
 import Link from "next/link"
-
 import AOS from "aos"
 import "aos/dist/aos.css"
 import {
@@ -29,7 +28,7 @@ import { useEffect } from "react"
 
 import { useState } from 'react';// adjust this import as needed
 
-const images = ['i6.jpg','i6.jpg'];
+const images = ['i6.jpg','gallery1/g1 (14).jpg','gallery2/g2 (15).jpg'];
 
 
 export default function Home() {
@@ -72,7 +71,7 @@ useEffect(() => {
               height={50}
               className="rounded-full border-2 border-orange-600 object-cover aspect-square"
             />
-          <span className="text-base sm:text-xl font-bold text-black whitespace-normal leading-tight xs:max-w-none">
+          <span className="text-base sm:text-2xl font-bold text-black whitespace-normal leading-tight xs:max-w-none">
   श्री राधाकृष्ण गौ सेवा संस्थान
 </span>
           </div>

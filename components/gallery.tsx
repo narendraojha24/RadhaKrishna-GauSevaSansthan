@@ -368,21 +368,36 @@ export default function Gallery() {
               </button>
             ))}
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {/* Masonry (Pinterest-style) layout */}
+           <div
+            className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4"
+            style={{ columnGap: "1rem" }}
+          >
             {images.map((image, index) => (
               <div
                 key={index}
-                className="relative aspect-square overflow-hidden rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                className="mb-4 break-inside-avoid relative overflow-hidden rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
+                style={{ width: "100%" }}
                 onClick={() => {
                   setCurrentImageIndex(index)
                   setIsDialogOpen(true)
                 }}
               >
-                <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-cover" />
+                <Image
+                  src={image.src || "/placeholder.svg"}
+                  alt={image.alt}
+                  width={400}
+                  height={Math.floor(300 + Math.random() * 200)} // random height for demo
+                  className="object-cover w-full h-auto"
+                  style={{
+                    borderRadius: "0.75rem",
+                    boxShadow: "0 2px 12px rgba(0,0,0,0.08)",
+                    marginBottom: "1rem",
+                  }}
+                />
               </div>
             ))}
           </div>
-
           <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             <DialogContent className="max-w-4xl p-0 overflow-hidden bg-white/90">
               <div className="relative h-[80vh] w-full">
@@ -406,7 +421,7 @@ export default function Gallery() {
                     e.stopPropagation()
                     nextImage()
                   }}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white/40 rounded-full p-2 transition-colors"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white/40 rounded-full p-2 transition-colors"
                 >
                   <ChevronRight className="h-6 w-6 text-white" />
                 </button>

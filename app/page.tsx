@@ -555,38 +555,8 @@ useEffect(() => {
                   
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
-                <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
-                  <Image
-                    src="/placeholder.svg?height=100&width=100"
-                    alt="श्रीमती राधिका वर्मा"
-                    width={100}
-                    height={100}
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-1 text-orange-600"> श्री रघुवीर सिंह केवट</h3>
-                <p className="text-sm text-green-600 mb-3">स्वयंसेवक समन्वयक</p>
-                <p className="text-gray-600 text-sm">
-                 
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
-                <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
-                  <Image
-                    src="girdhar.jpg"
-                    alt="श्रीमती राधिका वर्मा"
-                    width={100}
-                    height={100}
-                    className="object-cover w-full h-full"
-                  />
-                </div>
-                <h3 className="text-xl font-semibold mb-1 text-orange-600"> श्री गिरधर गोपाल मीना</h3>
-                <p className="text-sm text-green-600 mb-3">स्थायी सदस्य</p>
-                <p className="text-gray-600 text-sm">
-                  
-                </p>
-              </div>
+              
+
             </div>
           </div>
         </section>
@@ -605,12 +575,8 @@ useEffect(() => {
       <div className="bg-green-100 p-6 rounded-lg shadow-md">
         <h3 className="text-xl font-bold text-green-700 mb-4 text-center">स्वयंसेवक सदस्य</h3>
         <ul className="list-disc list-inside text-green-900 space-y-2">
-          <li>श्री रामलखन किरार</li>
-          <li>श्री राधेश्याम किरार</li>
-          <li>श्री पवन किरार</li>
-          <li>श्री लक्ष्मी नारायण सैनी</li>
-          <li>श्री चिंटूलाल धाकड़</li>
-          <li>श्री विपिन किरार</li>
+          <li>श्री रघुवीर सिंह केवट</li>
+          <li>श्री गिरधर गोपाल मीना</li>
         </ul>
       </div>
       {/* स्थायी सदस्य */}
@@ -625,6 +591,12 @@ useEffect(() => {
           <li>श्री बंकेश मेहता</li>
           <li>श्री शिवराज मेहता</li>
           <li>श्री लक्ष्मीनारायण सैनी</li>
+          <li>श्री रामलखन किरार</li>
+          <li>श्री राधेश्याम किरार</li>
+          <li>श्री पवन किरार</li>
+          <li>श्री लक्ष्मी नारायण सैनी</li>
+          <li>श्री चिंटूलाल धाकड़</li>
+          <li>श्री विपिन किरार</li>
         </ul>
       </div>
     </div>

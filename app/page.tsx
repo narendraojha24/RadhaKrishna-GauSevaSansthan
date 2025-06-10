@@ -76,37 +76,32 @@ useEffect(() => {
 </span>
           </div>
           <nav className="hidden md:flex gap-6">
-            <Link href="#about" className="text-sm font-medium hover:text-orange-600 transition-colors">
+            <Link href="#about" className="text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors border-2 rounded-full px-4 py-1">
               हमारे बारे में
             </Link>
-            <Link href="#services" className="text-sm font-medium hover:text-orange-600 transition-colors">
+            <Link href="#services" className="text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors border-2 rounded-full px-4 py-1">
               हमारी सेवाएं
             </Link>
-            <Link href="#team" className="text-sm font-medium hover:text-orange-600 transition-colors">
+            <Link href="#team" className="text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors border-2 rounded-full px-4 py-1">
               हमारी टीम
             </Link>
-            <Link href="#donate" className="text-sm font-medium hover:text-orange-600 transition-colors">
+            <Link href="#donate" className="text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors border-2 rounded-full px-4 py-1">
               दान करें
             </Link>
-            <Link href="#gallery" className="text-sm font-medium hover:text-orange-600 transition-colors">
+            <Link href="#gallery" className="text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors border-2 rounded-full px-4 py-1">
               गैलरी
             </Link>
-            <Link href="/donors" className="text-sm font-medium hover:text-orange-600 transition-colors">
+            <Link href="/donors" className="text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors border-2 rounded-full px-4 py-1">
   हमारे दानदाता
 </Link>
-            <Link href="#testimonials" className="text-sm font-medium hover:text-orange-600 transition-colors">
-              प्रशंसापत्र
-            </Link>
-            <Link href="#involved" className="text-sm font-medium hover:text-orange-600 transition-colors">
-              जुड़ें
-            </Link>
-            <Link href="#contact" className="text-sm font-medium hover:text-orange-600 transition-colors">
+        
+            <Link href="#contact" className="text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors border-2 rounded-full px-4 py-1">
               संपर्क
             </Link>
           </nav>
           <Button
             variant="outline"
-            className="hidden md:flex border-orange-600 text-orange-600 hover:bg-orange-50"
+            className="hidden md:flex border-orange-600 text-white bg-orange-600 hover:bg-white hover:text-orange-600 transition-colors"
             onClick={() => document.getElementById("donate")?.scrollIntoView({ behavior: "smooth" })}
           >
             अभी दान करें
@@ -180,11 +175,11 @@ useEffect(() => {
               गैलरी
             </Link>
             <Link
-              href="#testimonials"
+              href="/donors"
               className="py-2 text-gray-800 hover:text-orange-600"
               onClick={() => document.getElementById("mobile-menu")?.classList.add("hidden")}
             >
-              प्रशंसापत्र
+              हमारे दानदाता
             </Link>
             <Link
               href="#involved"

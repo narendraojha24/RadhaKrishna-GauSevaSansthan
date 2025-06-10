@@ -844,9 +844,9 @@ useEffect(() => {
                   <p className="text-gray-600 mb-4">
                     गौशाला में दैनिक गतिविधियों में मदद करने के लिए हमारे समर्पित स्वयंसेवकों की टीम में शामिल हों।
                   </p>
-                  <Button variant="outline" className="border-orange-600 text-orange-600 hover:bg-orange-50 w-full">
+                  <a href="#contactForm"><Button variant="outline" className="border-orange-600 text-white bg-orange-600 hover:bg-orange-50 w-full">
                     स्वयंसेवक के रूप में जुड़ें
-                  </Button>
+                  </Button></a>
                 </CardContent>
               </Card>
 
@@ -859,9 +859,9 @@ useEffect(() => {
                   <p className="text-gray-600 mb-4">
                     एक गाय की पूरी देखभाल को प्रायोजित करें और अपनी गोद ली गई गाय के बारे में नियमित अपडेट प्राप्त करें।
                   </p>
-                  <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-50 w-full">
+                  <a href="#contactForm"><Button variant="outline" className="border-green-600 text-white bg-green-600 hover:bg-green-50 w-full">
                     अभी गोद लें
-                  </Button>
+                  </Button></a>
                 </CardContent>
               </Card>
 
@@ -874,9 +874,9 @@ useEffect(() => {
                   <p className="text-gray-600 mb-4">
                     एक बार या नियमित आधार पर हमारी गायों की दैनिक आहार आवश्यकताओं के लिए योगदान दें।
                   </p>
-                  <Button variant="outline" className="border-orange-600 text-orange-600 hover:bg-orange-50 w-full">
+                  <a href="#contactForm"><Button variant="outline" className="border-orange-600 text-white bg-orange-600 hover:bg-orange-50 w-full">
                     अभी प्रायोजित करें
-                  </Button>
+                  </Button></a>
                 </CardContent>
               </Card>
 
@@ -889,9 +889,9 @@ useEffect(() => {
                   <p className="text-gray-600 mb-4">
                     सोशल मीडिया और अपने समुदाय में हमारे काम को साझा करके गौ संरक्षण का संदेश फैलाने में हमारी मदद करें।
                   </p>
-                  <Button variant="outline" className="border-green-600 text-green-600 hover:bg-green-50 w-full">
+                  <a href="#contactForm"><Button variant="outline" className="border-green-600 text-white bg-green-600 hover:bg-green-50 w-full">
                     कैसे करें जानें
-                  </Button>
+                  </Button></a>
                 </CardContent>
               </Card>
             </div>

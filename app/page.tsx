@@ -613,7 +613,7 @@ useEffect(() => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <Card className="overflow-hidden border-2 border-orange-100 hover:border-orange-300 transition-colors" data-aos="fade-right">
+              <Card className="overflow-hidden border-2 border-orange-100 hover:border-orange-300 transition-colors" data-aos="fade-in">
                 <div className="aspect-video relative">
                   <Image src="gallery1/g1 (13).jpg" alt="Cow shelter" fill className="object-cover" />
                 </div>
@@ -623,16 +623,14 @@ useEffect(() => {
                     हम त्यागी गई, घायल और बूढ़ी गायों के लिए एक सुरक्षित आश्रय प्रदान करते हैं, उन्हें हमारी विशेष रूप से डिज़ाइन की गई
                     गौशाला में भोजन, आश्रय और प्यार देते हैं।
                   </p>
-                  <Link href="#" className="text-orange-600 font-medium flex items-center hover:underline">
-                    अधिक जानें <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden border-2 border-green-100 hover:border-green-300 transition-colors" data-aos="fade-left">
+              <Card className="overflow-hidden border-2 border-green-100 hover:border-green-300 transition-colors" data-aos="fade-out">
                 <div className="aspect-video relative">
                   <Image
-                    src="/placeholder.svg?height=300&width=600"
+                    src="gallery1/g1 (10).jpg"
                     alt="Medical treatment"
                     fill
                     className="object-cover"
@@ -644,13 +642,11 @@ useEffect(() => {
                     हमारी पशु चिकित्सकों की टीम नियमित जांच, आपातकालीन देखभाल और विशेष उपचार प्रदान करती है ताकि हमारी गायों का
                     स्वास्थ्य सुनिश्चित हो सके।
                   </p>
-                  <Link href="#" className="text-green-600 font-medium flex items-center hover:underline">
-                    अधिक जानें <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden border-2 border-green-100 hover:border-green-300 transition-colors" data-aos="fade-right">
+              <Card className="overflow-hidden border-2 border-green-100 hover:border-green-300 transition-colors" data-aos="fade-in">
                 <div className="aspect-video relative">
                   <Image
                     src="ii1.jpg"
@@ -664,13 +660,11 @@ useEffect(() => {
                   <p className="text-gray-600 mb-4">
                     हम समाज में गौ संरक्षण और कल्याण के महत्व के बारे में जागरूकता बढ़ाने के लिए शैक्षिक कार्यक्रम और अभियान चलाते हैं।
                   </p>
-                  <Link href="#" className="text-green-600 font-medium flex items-center hover:underline">
-                    अधिक जानें <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+              
                 </CardContent>
               </Card>
 
-              <Card className="overflow-hidden border-2 border-orange-100 hover:border-orange-300 transition-colors" data-aos="fade-left">
+              <Card className="overflow-hidden border-2 border-orange-100 hover:border-orange-300 transition-colors" data-aos="fade-out">
                 <div className="aspect-video relative">
                   <Image
                     src="/placeholder.svg?height=300&width=600"
@@ -684,9 +678,7 @@ useEffect(() => {
                   <p className="text-gray-600 mb-4">
                     हमारे स्वयंसेवक कार्यक्रमों में शामिल होकर हमारी गौशाला में गौ देखभाल, खिलाने और रखरखाव गतिविधियों में सीधे भाग लें।
                   </p>
-                  <Link href="#" className="text-orange-600 font-medium flex items-center hover:underline">
-                    अधिक जानें <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+        
                 </CardContent>
               </Card>
             </div>
@@ -932,7 +924,7 @@ useEffect(() => {
                       <span className="font-medium">बस स्टैंड से : </span>5 मिनट की दूरी पर
                     </p>
                     <p className="text-gray-600">
-                      <span className="font-medium">गुना से : </span> NH-4 मार्ग से लगभग 40km, 2 घंटे की दूरी पर
+                      <span className="font-medium">गुना से : </span> NH-46 मार्ग से लगभग 40km, 1.5 घंटे की दूरी पर
                     </p>
                   </div>
 

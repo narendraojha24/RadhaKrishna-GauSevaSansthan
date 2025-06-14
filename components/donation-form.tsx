@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label"
 
 export default function DonationForm() {
   const amountRef = useRef<HTMLInputElement>(null)
-  const upiId = "narendraojha997@ybl" // <-- Replace with your actual UPI ID
+  const upiId = "  " // <-- Replace with your actual UPI ID
   const [showTxnField, setShowTxnField] = useState(false)
 
  const handleUPIClick = (e: React.MouseEvent) => {
@@ -25,7 +25,14 @@ export default function DonationForm() {
 
   return (
     <div className="bg-white p-8 rounded-lg shadow-md">
-      <h3 className="text-2xl font-semibold mb-6 text-orange-600">दान करें</h3>
+      <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-orange-600 mb-4">दान करें</h2>
+              <div className="w-24 h-1 bg-orange-600 mx-auto mb-6"></div>
+              <p className="max-w-2xl mx-auto text-gray-600">
+              आपके द्वारा दिया गया दान बेसहारा और पीड़ित गायों की सेवा, देखभाल और संरक्षण के लिए उपयोग किया जाएगा। कृपया आगे बढ़ें और अपने योगदान से इस पुण्य कार्य में सहभागी बनें।
+
+              </p>
+            </div>
       <form
         action="https://formspree.io/f/xlddyryg"
         method="POST"
@@ -94,7 +101,7 @@ export default function DonationForm() {
             <Label htmlFor="txnId">UPI ट्रांजेक्शन/रेफरेंस नंबर</Label>
             <Input
   name="txnId"
-  id="txnId"
+  id="UPI Transaction ID"
   placeholder="UPI भुगतान का ट्रांजेक्शन/रेफरेंस नंबर दर्ज करें"
   required
   pattern="[A-Za-z0-9]{8,}" // at least 8 alphanumeric characters

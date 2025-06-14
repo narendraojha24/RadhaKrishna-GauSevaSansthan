@@ -28,7 +28,7 @@ import { useEffect } from "react"
 
 import { useState } from 'react';// adjust this import as needed
 
-const images = ['i6.jpg','i13.jpg','gallery2/g2 (5).jpg']
+const images = ['i6.jpg','i13.jpg','gallery2/g2 (11).jpg']
 
 
 export default function Home() {
@@ -71,7 +71,7 @@ useEffect(() => {
               height={50}
               className="rounded-full border-2 border-orange-600 object-cover aspect-square"
             />
-          <span className="text-base sm:text-xl font-bold text-black whitespace-normal leading-tight xs:max-w-none">
+          <span className="text-base sm:text-xl font-bold text-orange whitespace-normal leading-tight xs:max-w-none">
   श्री राधाकृष्ण गौ सेवा संस्थान
 </span>
           </div>
@@ -84,9 +84,6 @@ useEffect(() => {
             </Link>
             <Link href="#team" className="text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors border-2 rounded-full px-4 py-1">
               हमारी टीम
-            </Link>
-            <Link href="#donate" className="text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors border-2 rounded-full px-4 py-1">
-              दान करें
             </Link>
             <Link href="#gallery" className="text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors border-2 rounded-full px-4 py-1">
               गैलरी
@@ -159,13 +156,6 @@ useEffect(() => {
               onClick={() => document.getElementById("mobile-menu")?.classList.add("hidden")}
             >
               हमारी टीम
-            </Link>
-            <Link
-              href="#donate"
-              className="py-2 text-gray-800 hover:text-orange-600"
-              onClick={() => document.getElementById("mobile-menu")?.classList.add("hidden")}
-            >
-              दान करें
             </Link>
             <Link
               href="#gallery"
@@ -1002,14 +992,14 @@ useEffect(() => {
       <label htmlFor="name" className="text-sm font-medium">
         आपका नाम
       </label>
-      <Input id="name" name="Name" placeholder="अपना नाम दर्ज करें" required />
+      <Input id="name" name="Name" placeholder="अपना नाम दर्ज करें" requiorange />
     </div>
 
     <div className="space-y-2">
       <label htmlFor="email" className="text-sm font-medium">
         ईमेल पता
       </label>
-      <Input id="email" name="Email" type="email" placeholder="अपना ईमेल दर्ज करें" required />
+      <Input id="email" name="Email" type="email" placeholder="अपना ईमेल दर्ज करें" requiorange />
     </div>
   </div>
 
@@ -1017,14 +1007,14 @@ useEffect(() => {
     <label htmlFor="subject" className="text-sm font-medium">
       विषय
     </label>
-    <Input id="subject" name="Subject" placeholder="विषय दर्ज करें" required />
+    <Input id="subject" name="Subject" placeholder="विषय दर्ज करें" requiorange />
   </div>
 
   <div className="space-y-2">
     <label htmlFor="message" className="text-sm font-medium">
       संदेश
     </label>
-    <Textarea id="message" name="Message" placeholder="अपना संदेश दर्ज करें" className="min-h-[120px]" required />
+    <Textarea id="message" name="Message" placeholder="अपना संदेश दर्ज करें" className="min-h-[120px]" requiorange />
   </div>
 
   <Button className="w-full bg-orange-600 hover:bg-orange-700" type="submit">

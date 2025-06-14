@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label"
 
 export default function DonationForm() {
   const amountRef = useRef<HTMLInputElement>(null)
-  const upiId = "" // <-- Replace with your actual UPI ID
+  const upiId = "narendraojha997@ybl" // <-- Replace with your actual UPI ID
   const [showTxnField, setShowTxnField] = useState(false)
 
  const handleUPIClick = (e: React.MouseEvent) => {
@@ -93,11 +93,13 @@ export default function DonationForm() {
           <div className="space-y-2">
             <Label htmlFor="txnId">UPI ट्रांजेक्शन/रेफरेंस नंबर</Label>
             <Input
-              name="txnId"
-              id="txnId"
-              placeholder="UPI भुगतान का ट्रांजेक्शन/रेफरेंस नंबर दर्ज करें"
-              required
-            />
+  name="txnId"
+  id="txnId"
+  placeholder="UPI भुगतान का ट्रांजेक्शन/रेफरेंस नंबर दर्ज करें"
+  required
+  pattern="[A-Za-z0-9]{8,}" // at least 8 alphanumeric characters
+  title="कृपया मान्य ट्रांजेक्शन/रेफरेंस नंबर दर्ज करें।"
+/>
             <p className="text-xs text-gray-500">भुगतान के बाद UPI ऐप से ट्रांजेक्शन/रेफरेंस नंबर कॉपी करें।</p>
           </div>
         )}
@@ -111,7 +113,7 @@ export default function DonationForm() {
             आपका दान धारा 80G के तहत कर छूट के लिए पात्र है। दान प्रक्रिया पूरी होने के बाद आपके ईमेल पर एक रसीद भेजी जाएगी।
           </p>
           <p className="text-xs text-gray-500">
-            अधिक जानकारी के लिए हमें +91 98765 43210 पर कॉल करें या info@radhakrishnagauseva.org पर ईमेल करें।
+            अधिक जानकारी के लिए हमें +91  6264535229 पर कॉल करें या  gosevashriradhkrishana@gmail.com पर ईमेल करें।
           </p>
         </div>
       </form>

@@ -28,7 +28,7 @@ import { useEffect } from "react"
 
 import { useState } from 'react';// adjust this import as needed
 
-const images = ['i6.jpg','gallery1/g1 (14).jpg','i13.jpg','gallery2/g2 (5).jpg']
+const images = ['i6.jpg','i13.jpg','gallery2/g2 (5).jpg']
 
 
 export default function Home() {
@@ -524,7 +524,7 @@ useEffect(() => {
               <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <Image
-                    src="/placeholder.svg?height=100&width=100"
+                    src="sumer.jpg"
                     alt="श्रीमती राधिका वर्मा"
                     width={100}
                     height={100}

@@ -284,7 +284,7 @@ export default function Gallery() {
                     e.stopPropagation()
                     prevImage()
                   }}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white/40 rounded-full p-2 transition-colors"
+                  className="absolute left-4 top-1/2 -translate-y-1/2 bg-black hover:bg-black/80 rounded-full p-2 transition-colors"
                 >
                   <ChevronLeft className="h-6 w-6 text-white" />
                 </button>
@@ -293,12 +293,12 @@ export default function Gallery() {
                     e.stopPropagation()
                     nextImage()
                   }}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-white/40 rounded-full p-2 transition-colors"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 bg-black hover:bg-black/80 rounded-full p-2 transition-colors"
                 >
                   <ChevronRight className="h-6 w-6 text-white" />
                 </button>
-                <div className="absolute bottom-4 left-0 right-0 text-center text-white bg-black/50 py-2">
-                  <p>{images[currentImageIndex]?.alt}</p>
+                <div className="absolute bottom-4 left-0 right-0 text-center text-white bg-black/0 py-2">
+                  {/*<p>{images[currentImageIndex]?.alt}</p>*/}
                   <p className="text-sm text-gray-300">
                     {currentImageIndex + 1} / {images.length}
                   </p>

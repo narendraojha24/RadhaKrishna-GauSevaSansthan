@@ -610,9 +610,22 @@ useEffect(() => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <Card className="overflow-hidden border-2 border-orange-100 hover:border-orange-300 transition-colors" data-aos="fade-in">
-                <div className="aspect-video relative">
-                  <Image src="gallery1/g1 (13).jpg" alt="Cow shelter" fill className="object-cover" />
-                </div>
+                <div className="aspect-video relative flex items-center justify-center">
+  <div className="w-full h-full rounded-xl overflow-hidden shadow-2xl border-4 border-white transform transition-transform duration-500 hover:rotate-[-6deg] hover:scale-105 hover:shadow-3xl hover:border-orange-300"
+    style={{
+      boxShadow: "0 10px 30px rgba(0,0,0,0.2), 0 2px 8px rgba(255,140,0,0.15)",
+      perspective: "800px"
+    }}
+  >
+    <Image
+      src="gallery1/g1 (13).jpg" // change as needed
+      alt="Cow shelter"
+      fill
+      className="object-cover transition-transform duration-500 hover:scale-110"
+      style={{ willChange: "transform" }}
+    />
+  </div>
+</div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-orange-600">गौ आश्रय और देखभाल (गौशाला)</h3>
                   <p className="text-gray-600 mb-4">
@@ -624,14 +637,22 @@ useEffect(() => {
               </Card>
 
               <Card className="overflow-hidden border-2 border-green-100 hover:border-green-300 transition-colors" data-aos="fade-out">
-                <div className="aspect-video relative">
-                  <Image
-                    src="gallery1/g1 (10).jpg"
-                    alt="Medical treatment"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                <div className="aspect-video relative flex items-center justify-center">
+  <div className="w-full h-full rounded-xl overflow-hidden shadow-2xl border-4 border-white transform transition-transform duration-500 hover:rotate-[-6deg] hover:scale-105 hover:shadow-3xl hover:border-orange-300"
+    style={{
+      boxShadow: "0 10px 30px rgba(0,0,0,0.2), 0 2px 8px rgba(255,140,0,0.15)",
+      perspective: "800px"
+    }}
+  >
+    <Image
+      src="gallery1/g1 (10).jpg" // change as needed
+      alt="Cow shelter"
+      fill
+      className="object-cover transition-transform duration-500 hover:scale-110"
+      style={{ willChange: "transform" }}
+    />
+  </div>
+</div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-green-600">गायों के लिए चिकित्सा उपचार</h3>
                   <p className="text-gray-600 mb-4">
@@ -643,14 +664,22 @@ useEffect(() => {
               </Card>
 
               <Card className="overflow-hidden border-2 border-green-100 hover:border-green-300 transition-colors" data-aos="fade-in">
-                <div className="aspect-video relative">
-                  <Image
-                    src="ii1.jpg"
-                    alt="Awareness campaigns"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+               <div className="aspect-video relative flex items-center justify-center">
+  <div className="w-full h-full rounded-xl overflow-hidden shadow-2xl border-4 border-white transform transition-transform duration-500 hover:rotate-[-6deg] hover:scale-105 hover:shadow-3xl hover:border-orange-300"
+    style={{
+      boxShadow: "0 10px 30px rgba(0,0,0,0.2), 0 2px 8px rgba(255,140,0,0.15)",
+      perspective: "800px"
+    }}
+  >
+    <Image
+      src="ii1.jpg" // change as needed
+      alt="Cow shelter"
+      fill
+      className="object-cover transition-transform duration-500 hover:scale-110"
+      style={{ willChange: "transform" }}
+    />
+  </div>
+</div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-green-600">जागरूकता अभियान</h3>
                   <p className="text-gray-600 mb-4">
@@ -661,14 +690,22 @@ useEffect(() => {
               </Card>
 
               <Card className="overflow-hidden border-2 border-orange-100 hover:border-orange-300 transition-colors" data-aos="fade-out">
-                <div className="aspect-video relative">
-                  <Image
-                    src="/placeholder.svg?height=300&width=600"
-                    alt="Volunteer programs"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+                <div className="aspect-video relative flex items-center justify-center">
+  <div className="w-full h-full rounded-xl overflow-hidden shadow-2xl border-4 border-white transform transition-transform duration-500 hover:rotate-[-6deg] hover:scale-105 hover:shadow-3xl hover:border-orange-300"
+    style={{
+      boxShadow: "0 10px 30px rgba(0,0,0,0.2), 0 2px 8px rgba(255,140,0,0.15)",
+      perspective: "800px"
+    }}
+  >
+    <Image
+      src="gallery1/g1 (13).jpg" // change as needed
+      alt="Cow shelter"
+      fill
+      className="object-cover transition-transform duration-500 hover:scale-110"
+      style={{ willChange: "transform" }}
+    />
+  </div>
+</div>
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-orange-600">स्वयंसेवक कार्यक्रम</h3>
                   <p className="text-gray-600 mb-4">

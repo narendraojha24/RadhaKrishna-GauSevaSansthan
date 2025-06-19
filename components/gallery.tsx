@@ -11,7 +11,7 @@ export default function Gallery() {
   const [isDialogOpen, setIsDialogOpen] = useState(false)
   const [activeCategory, setActiveCategory] = useState("gaushala")
 
-  // Example categories
+  
   const categories = [
     { key: "gaushala", label: "गौशाला" },
     { key: "events", label: "वृक्षारोपण" },
@@ -19,7 +19,6 @@ export default function Gallery() {
     { key: "spiritual", label: "आध्यात्मिक" },
   ]
 
-  // Example images for each category
   const imagesByCategory: Record<string, { src: string; alt: string }[]> = {
     gaushala: [
        { src: "gallery1/g1 (16).jpg", alt: "गौशाला 16" },
@@ -112,10 +111,10 @@ export default function Gallery() {
   
     ],
     spiritual: [
-      { src: "gallery4/g4 (1).jpg", alt: "गौशाला 1" },
-      { src: "gallery4/g4 (2).jpg", alt: "गौशाला 2" },
-      { src: "gallery4/g4 (3).jpg", alt: "गौशाला 3" },
-      { src: "gallery4/g4 (5).jpg", alt: "गौशाला 5" },
+      { src: "gallery4/g4 (1).jpg", alt: "" },
+      { src: "gallery4/g4 (2).jpg", alt: "" },
+      { src: "gallery4/g4 (3).jpg", alt: "" },
+      { src: "gallery4/g4 (5).jpg", alt: "" },
       { src: "gallery3/g3 (23).jpg", alt: "गौशाला 23" },
       { src: "gallery4/g4 (6).jpg", alt: "गौशाला 6" },
       { src: "gallery4/g4 (7).jpg", alt: "गौशाला 7" },

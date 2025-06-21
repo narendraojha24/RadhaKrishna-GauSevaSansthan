@@ -1,4 +1,4 @@
-# 🐄 Radha Krishna Gau Seva Sansthan
+# 🐄 RadhaKrishna Gau Seva Sansthan
 
 A spiritual and social welfare website dedicated to promoting the noble cause of Gau Seva (cow protection and care). This site serves as an online presence for Radha Krishna Gau Seva Sansthan, helping spread awareness, showcase activities, and collect donations to support the mission.
 

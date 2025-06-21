@@ -225,7 +225,7 @@ useEffect(() => {
           श्री राधाकृष्ण गौ सेवा संस्थान
         </h1>
         <p className="max-w-2xl text-lg md:text-xl mb-8 drop-shadow-md">
-          ग्राम डोंगर,वार्ड क्रमांक 14,नगर पालिका राघौगढ़,जिला गुना (मध्य प्रदेश)
+          ग्राम डोंगर, वार्ड क्रमांक 14, नगर पालिका राघौगढ़, जिला गुना ( मध्य प्रदेश )
         </p>
         <Button
           className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg rounded-full "
@@ -693,7 +693,7 @@ useEffect(() => {
                 <div className="aspect-video relative flex items-center justify-center">
   <div className="w-full h-full rounded-xl overflow-hidden shadow-2xl border-4 border-white transform transition-transform duration-500 hover:rotate-[-6deg] hover:scale-105 hover:shadow-3xl hover:border-orange-300"
     style={{
-      boxShadow: "0 10px 30px rgba(0,0,0,0.2), 0 2px 8px rgba(255,140,0,0.15)",
+      boxShadow: "0 10px 30px rgba(9, 9, 9, 0.2), 0 2px 8px rgba(255,140,0,0.15)",
       perspective: "800px"
     }}
   >

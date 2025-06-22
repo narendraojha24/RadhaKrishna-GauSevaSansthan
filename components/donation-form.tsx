@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label"
 
 export default function DonationForm() {
   const amountRef = useRef<HTMLInputElement>(null)
-  const upiId = "  " // <-- Replace with your actual UPI ID
+  const upiId = "9630048447@ybl" // <-- Replace with your actual UPI ID
   const [showTxnField, setShowTxnField] = useState(false)
 
  const handleUPIClick = (e: React.MouseEvent) => {

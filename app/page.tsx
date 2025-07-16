@@ -226,6 +226,7 @@ useEffect(() => {
         </h1>
         <p className="max-w-2xl text-lg md:text-xl mb-8 drop-shadow-md">
           ग्राम डोंगर, वार्ड क्रमांक 14, नगर पालिका राघौगढ़, जिला गुना ( मध्य प्रदेश )
+          
         </p>
         <Button
           className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg rounded-full "

@@ -1,43 +1,54 @@
 "use client"
 
-import { useRef, useState } from "react"
+import { useState } from "react"
+import { loadStripe } from "@stripe/stripe-js"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
-export default function DonationForm() {
-  const amountRef = useRef<HTMLInputElement>(null)
-  const upiId = "........." // <-- Replace with your actual UPI ID
-  const [showTxnField, setShowTxnField] = useState(false)
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!)
 
- const handleUPIClick = (e: React.MouseEvent) => {
-  e.preventDefault()
-  const amount = amountRef.current?.value
-  if (!amount || Number(amount) < 1) {
-    alert("कृपया पहले दान राशि दर्ज करें।")
-    amountRef.current?.focus()
-    return
+export default function DonationForm() {
+  const [form, setForm] = useState({
+    amount: "",
+    name: "",
+    email: "",
+    phone: "",
+  })
+  const [loading, setLoading] = useState(false)
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setForm({ ...form, [e.target.name]: e.target.value })
   }
-  const upiLink = `upi://pay?pa=${upiId}&pn=Gauseva%20Donation&am=${amount}&cu=INR`
-  window.location.href = upiLink // <-- Use this instead of window.open
-  setShowTxnField(true)
-}
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setLoading(true)
+    const res = await fetch("/api/create-checkout-session", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(form),
+    })
+    const data = await res.json()
+    setLoading(false)
+    if (data.id) {
+      const stripe = await stripePromise
+      await stripe?.redirectToCheckout({ sessionId: data.id })
+    } else {
+      alert("कुछ गलत हो गया: " + (data.error || ""))
+    }
+  }
 
   return (
     <div className="bg-white p-8 rounded-lg shadow-md">
       <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-orange-600 mb-4">दान करें</h2>
-              <div className="w-24 h-1 bg-orange-600 mx-auto mb-6"></div>
-              <p className="max-w-2xl mx-auto text-gray-600">
-              आपके द्वारा दिया गया दान बेसहारा और पीड़ित गायों की सेवा, देखभाल और संरक्षण के लिए उपयोग किया जाएगा। कृपया आगे बढ़ें और अपने योगदान से इस पुण्य कार्य में सहभागी बनें।
-
-              </p>
-            </div>
-      <form
-        action="https://formspree.io/f/xlddyryg"
-        method="POST"
-        className="space-y-6"
-      >
+        <h2 className="text-3xl font-bold text-orange-600 mb-4">दान करें</h2>
+        <div className="w-24 h-1 bg-orange-600 mx-auto mb-6"></div>
+        <p className="max-w-2xl mx-auto text-gray-600">
+          आपके द्वारा दिया गया दान बेसहारा और पीड़ित गायों की सेवा, देखभाल और संरक्षण के लिए उपयोग किया जाएगा। कृपया आगे बढ़ें और अपने योगदान से इस पुण्य कार्य में सहभागी बनें।
+        </p>
+      </div>
+      <form onSubmit={handleSubmit} className="space-y-6">
         <div className="space-y-2">
           <Label htmlFor="amount">दान राशि (₹)</Label>
           <Input
@@ -47,82 +58,51 @@ export default function DonationForm() {
             placeholder="दान राशि दर्ज करें"
             min="1"
             required
-            ref={amountRef}
+            value={form.amount}
+            onChange={handleChange}
           />
-          <p className="text-xs text-gray-500">न्यूनतम दान राशि ₹1 है</p>
         </div>
-
         <div className="space-y-2">
           <Label htmlFor="name">पूरा नाम</Label>
-          <Input name="name" id="name" placeholder="अपना पूरा नाम दर्ज करें" required />
+          <Input
+            name="name"
+            id="name"
+            placeholder="अपना पूरा नाम दर्ज करें"
+            required
+            value={form.name}
+            onChange={handleChange}
+          />
         </div>
-
         <div className="space-y-2">
           <Label htmlFor="email">ईमेल पता</Label>
-          <Input name="email" id="email" type="email" placeholder="अपना ईमेल दर्ज करें" required />
+          <Input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="अपना ईमेल दर्ज करें"
+            required
+            value={form.email}
+            onChange={handleChange}
+          />
         </div>
-
         <div className="space-y-2">
           <Label htmlFor="phone">फोन नंबर</Label>
-          <Input name="phone" id="phone" placeholder="अपना फोन नंबर दर्ज करें" required />
+          <Input
+            name="phone"
+            id="phone"
+            placeholder="अपना फोन नंबर दर्ज करें"
+            required
+            value={form.phone}
+            onChange={handleChange}
+          />
         </div>
-
-        <div className="space-y-2">
-          <Label htmlFor="address">पता</Label>
-          <Input name="address" id="address" placeholder="अपना पता दर्ज करें" />
-        </div>
-
-        <div className="space-y-2">
-          <Label htmlFor="panCard">पैन कार्ड नंबर (वैकल्पिक)</Label>
-          <Input name="panCard" id="panCard" placeholder="कर लाभ के लिए पैन कार्ड नंबर दर्ज करें" />
-          <p className="text-xs text-gray-500">80G कर छूट के लिए</p>
-        </div>
-
-        <div>
-          <Label className="text-base mb-3 block">भुगतान विधि</Label>
-          <div className="bg-orange-50 border border-orange-200 rounded p-4 text-center">
-            <span className="font-semibold text-orange-700">हमारा UPI ID:</span>
-            <Button
-              type="button"
-              variant="outline"
-              className="ml-2 text-orange-900 border-orange-600 hover:bg-orange-100"
-              onClick={handleUPIClick}
-            >
-              {upiId} से भुगतान करें
-            </Button>
-            <div className="text-xs text-gray-500 mt-1">
-              ऊपर दिए गए बटन पर क्लिक करें, अपने UPI ऐप में भुगतान पूरा करें। भुगतान के बाद, कृपया नीचे ट्रांजेक्शन/रेफरेंस नंबर दर्ज करें और फॉर्म सबमिट करें।
-            </div>
-          </div>
-        </div>
-
-        {showTxnField && (
-          <div className="space-y-2">
-            <Label htmlFor="txnId">UPI ट्रांजेक्शन/रेफरेंस नंबर</Label>
-            <Input
-  name="txnId"
-  id="UPI Transaction ID"
-  placeholder="UPI भुगतान का ट्रांजेक्शन/रेफरेंस नंबर दर्ज करें"
-  required
-  pattern="[A-Za-z0-9]{8,}" // at least 8 alphanumeric characters
-  title="कृपया मान्य ट्रांजेक्शन/रेफरेंस नंबर दर्ज करें।"
-/>
-            <p className="text-xs text-gray-500">भुगतान के बाद UPI ऐप से ट्रांजेक्शन/रेफरेंस नंबर कॉपी करें।</p>
-          </div>
-        )}
-
-        <Button type="submit" className="w-full bg-orange-600 hover:bg-orange-700 text-white py-6">
-          दान फॉर्म सबमिट करें
+        <Button
+          type="submit"
+          className="w-full bg-orange-600 hover:bg-orange-700 text-white py-6"
+          disabled={loading}
+        >
+          {loading ? "प्रोसेस हो रहा है..." : "Stripe से सुरक्षित भुगतान करें"}
         </Button>
-
-        <div className="text-center space-y-2">
-          <p className="text-xs text-gray-500">
-            आपका दान धारा 80G के तहत कर छूट के लिए पात्र है। दान प्रक्रिया पूरी होने के बाद आपके ईमेल पर एक रसीद भेजी जाएगी।
-          </p>
-          <p className="text-xs text-gray-500">
-            अधिक जानकारी के लिए हमें +91  6264535229 पर कॉल करें या  gosevashriradhkrishana@gmail.com पर ईमेल करें।
-          </p>
-        </div>
       </form>
     </div>
   )

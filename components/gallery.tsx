@@ -192,14 +192,16 @@ export default function Gallery() {
     { thumbnail: "/video20.mp4", title: "" },
 
     { thumbnail: "/video15.mp4", title: "" },
-     { thumbnail: "/video1.mp4", title: "" },
+    { thumbnail: "/video1.mp4", title: "" },
     { thumbnail: "/video21.mp4", title: "" },
-     { thumbnail: "/video22.mp4", title: "" },
-      { thumbnail: "/video23.mp4", title: "" },
-       { thumbnail: "/video24.mp4", title: "" },
-        { thumbnail: "/video25.mp4", title: "" },
-         { thumbnail: "/video26.mp4", title: "" },
-
+    { thumbnail: "/video22.mp4", title: "" },
+    { thumbnail: "/video23.mp4", title: "" },
+    { thumbnail: "/video24.mp4", title: "" },
+    { thumbnail: "/video25.mp4", title: "" },
+    { thumbnail: "/video26.mp4", title: "" },
+    { thumbnail: "/video27.mp4", title: "" },
+    { thumbnail: "/video28.mp4", title: "" },
+    { thumbnail: "/video29.mp4", title: "" },
 
 
     // ...your videos

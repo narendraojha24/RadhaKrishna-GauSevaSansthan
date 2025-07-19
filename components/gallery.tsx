@@ -23,12 +23,9 @@ export default function Gallery() {
     gaushala: [
        { src: "gallery1/g1 (16).jpg", alt: "गौशाला 16" },
       { src: "gg1 (36).jpg", alt: "गौशाला 3" },
-      { src: "gallery1/g1 (7).jpg", alt: "गौशाला 7" },
-      { src: "gallery1/g1 (8).jpg", alt: "गौशाला 8" },
+      { src: "gallery1/g1 (7).jpg", alt: "गौशाला 7" },    
       { src: "gallery1/g1 (10).jpg", alt: "गौशाला 10" },
-      { src: "gallery1/g1 (11).jpg", alt: "गौशाला 11" },
-      { src: "gallery1/g1 (14).jpg", alt: "गौशाला 14" },
-    
+      { src: "gallery1/g1 (14).jpg", alt: "गौशाला 14" },   
       { src: "gallery1/g1 (19).jpg", alt: "गौशाला 19" },
       { src: "gallery1/g1 (21).jpg", alt: "गौशाला 21" },
       { src: "gallery1/g1 (22).jpg", alt: "गौशाला 22" },
@@ -173,9 +170,11 @@ export default function Gallery() {
 
   const videos = [
     { thumbnail: "/video8.mp4", title: "" },
-     { thumbnail: "/video14 (1).mp4", title: "" },
+    { thumbnail: "/video16.mp4", title: "" },
+    { thumbnail: "/video17.mp4", title: "" },
+
      { thumbnail: "/video5.mp4", title: "" },
-    { thumbnail: "/video14 (3).mp4", title: "" },
+
     { thumbnail: "/video14 (4).mp4", title: "" },
     { thumbnail: "/video14 (5).mp4", title: "" },
     { thumbnail: "/video2.mp4", title: "" },
@@ -190,8 +189,17 @@ export default function Gallery() {
     { thumbnail: "/video15 (1).mp4", title: "" },
     { thumbnail: "/video15 (2).mp4", title: "" },
     { thumbnail: "/video15 (3).mp4", title: "" },
+    { thumbnail: "/video20.mp4", title: "" },
+
     { thumbnail: "/video15.mp4", title: "" },
      { thumbnail: "/video1.mp4", title: "" },
+    { thumbnail: "/video21.mp4", title: "" },
+     { thumbnail: "/video22.mp4", title: "" },
+      { thumbnail: "/video23.mp4", title: "" },
+       { thumbnail: "/video24.mp4", title: "" },
+        { thumbnail: "/video25.mp4", title: "" },
+         { thumbnail: "/video26.mp4", title: "" },
+
 
 
     // ...your videos

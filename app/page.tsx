@@ -498,7 +498,7 @@ useEffect(() => {
               <div className="bg-white p-6 rounded-lg shadow-md text-center hover:shadow-lg transition-shadow" data-aos="fade-up">
                 <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
                   <Image
-                    src="ojhaaa.jpg"
+                    src="ojhaa.jpg"
                     alt="श्री गोपाल कृष्ण गोयल"
                     width={100}
                     height={100}

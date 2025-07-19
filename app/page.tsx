@@ -565,10 +565,9 @@ useEffect(() => {
         <h3 className="text-xl font-bold text-orange-500 mb-4 text-center">स्वयंसेवक सदस्य</h3>
         <ul className="list-disc list-inside text-orange-700 space-y-2">
           <li>श्री रघुवीर सिंह केवट</li>
-          <li>श्री गिरधर गोपाल मीना</li>
           <li>श्री आनन्द चौरसिया</li>
           <li>श्री नवाब शाह (पेंटर)</li>
-          <li>श्री राम शिवहरे </li>
+          <li>श्री रामू शिवहरे </li>
           <li>श्री समन्दर मीना </li>
           <li>श्री दिनेश ओझा </li>
 
@@ -579,6 +578,7 @@ useEffect(() => {
         <h3 className="text-xl font-bold text-white mb-4 text-center">स्थायी सदस्य</h3>
         <ul className="list-disc list-inside text-white space-y-2">
           <li>श्री राजीव शर्मा</li>
+          <li>श्री गिरधर गोपाल मीना</li>
           <li>श्री जगदीश शिवहरी</li>
           <li>श्री पुरुषोत्तम धाकड़</li>
           <li>श्री जगदीश धाकड़</li>
@@ -958,7 +958,7 @@ useEffect(() => {
                       <span className="font-medium">बस स्टैंड से : </span>5 मिनट की दूरी पर
                     </p>
                     <p className="text-gray-600">
-                      <span className="font-medium">गुना से : </span> NH-46 मार्ग से लगभग 40km, 1.5 घंटे की दूरी पर
+                      <span className="font-medium">राष्ट्रीय राजमार्ग 46 (राघौगढ़), गेल इंडिया लिमिटेड से : </span> 6 किलोमीटर दूरी पर
                     </p>
                   </div>
 
@@ -978,7 +978,7 @@ useEffect(() => {
                           d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
                         />
                       </svg>
-                      +91 6264535229 , 9630048447
+                      +91 6264535229 , 9424516994 , 7389901566 , 9425721994 , 9179387144 , 9630048447.
                     </p>
                     <p className="text-gray-600 flex items-center">
                       <svg
@@ -994,7 +994,7 @@ useEffect(() => {
                           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                         />
                       </svg>
-                      gosevashriradhkrishana@gmail.com
+                      gausevaradhakrishna@gmail.com
                     </p>
                     <p className="text-gray-600 flex items-center">
                       <svg
@@ -1030,7 +1030,7 @@ useEffect(() => {
               <div className="bg-white p-8 rounded-lg shadow-md">
                 <h3 className="text-xl font-semibold mb-6 text-orange-600">हमें संदेश भेजें</h3>
 
-               <form id="contactForm" data-aos="flip-left" action="https://formspree.io/f/xlddyryg" method="POST">
+               <form id="contactForm" data-aos="flip-left" action="https://formspree.io/f/xkgzonop" method="POST">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
     <div className="space-y-2">
       <label htmlFor="name" className="text-sm font-medium">

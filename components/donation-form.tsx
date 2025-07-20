@@ -138,14 +138,7 @@ export default function DonationForm() {
               required
               className="focus:ring-2 focus:ring-green-400"
             />
-            <Label htmlFor="screenshot">भुगतान का स्क्रीनशॉट अपलोड करें (वैकल्पिक)</Label>
-            <Input
-              type="file"
-              name="screenshot"
-              id="screenshot"
-              accept="image/*"
-              className="block w-full text-sm text-gray-500"
-            />
+            
             <p className="text-xs text-gray-500">
               भुगतान के बाद UPI ऐप से ट्रांजेक्शन/रेफरेंस नंबर कॉपी करें और चाहें तो स्क्रीनशॉट अपलोड करें।
             </p>

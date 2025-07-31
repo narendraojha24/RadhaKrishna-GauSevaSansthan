@@ -4,6 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import { X } from "lucide-react"
 import {
   ChevronRight,
   Heart,
@@ -29,9 +30,11 @@ import { useEffect } from "react"
 import { useState } from 'react';// adjust this import as needed
 
 const images = ['i6.jpg','i13.jpg','gallery2/g2 (11).jpg']
-
+ 
 
 export default function Home() {
+
+const [openModal, setOpenModal] = useState<number | null>(null)
 
    const [currentImage, setCurrentImage] = useState(0);
 
@@ -870,9 +873,13 @@ useEffect(() => {
                   <p className="text-gray-600 mb-4">
                     गौशाला में दैनिक गतिविधियों में मदद करने के लिए हमारे समर्पित स्वयंसेवकों की टीम में शामिल हों।
                   </p>
-                  <a href="#contactForm"><Button variant="outline" className="border-orange-600 text-white bg-orange-600 hover:bg-orange-50 w-full">
-                    स्वयंसेवक के रूप में जुड़ें
-                  </Button></a>
+                  <Button
+  variant="outline"
+  className="border-orange-600 text-white bg-orange-600 hover:bg-orange-50 w-full"
+  onClick={() => setOpenModal(0)} // Use 0, 1, 2, 3 for each card
+>
+  स्वयंसेवक के रूप में जुड़ें
+</Button>
                 </CardContent>
               </Card>
 
@@ -924,6 +931,68 @@ useEffect(() => {
           </div>
         </section>
 
+{openModal !== null && (
+  <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center px-2">
+    <div className="bg-white rounded-xl shadow-2xl max-w-md w-full p-6 relative animate-fade-in">
+      <button
+        className="absolute top-4 right-4 text-gray-500 hover:text-orange-600"
+        onClick={() => setOpenModal(null)}
+        aria-label="Close"
+      >
+        <X className="h-6 w-6" />
+      </button>
+      {/* Modal Content */}
+      {openModal === 0 && (
+        <>
+          <h3 className="text-xl font-bold text-orange-600 mb-2">स्वयंसेवक बनें</h3>
+          <p className="text-gray-700 mb-4">
+            गौशाला में दैनिक गतिविधियों में मदद करने के लिए हमारे समर्पित स्वयंसेवकों की टीम में शामिल हों। <br />
+            <strong>प्रक्रिया:</strong> <br />
+            1. नीचे दिए गए संपर्क फॉर्म से आवेदन करें।<br />
+            2. हमारी टीम आपसे संपर्क करेगी।<br />
+            3. प्रशिक्षण के बाद सेवा शुरू करें।
+          </p>
+        </>
+      )}
+      {openModal === 1 && (
+        <>
+          <h3 className="text-xl font-bold text-green-600 mb-2">एक गाय को गोद लें</h3>
+          <p className="text-gray-700 mb-4">
+            एक गाय की पूरी देखभाल को प्रायोजित करें और अपनी गोद ली गई गाय के बारे में नियमित अपडेट प्राप्त करें।<br />
+            <strong>प्रक्रिया:</strong><br />
+            1. संपर्क फॉर्म भरें।<br />
+            2. टीम आपको उपलब्ध गायों की जानकारी देगी।<br />
+            3. गोद लेने के बाद आपको अपडेट मिलेंगे।
+          </p>
+        </>
+      )}
+      {openModal === 2 && (
+        <>
+          <h3 className="text-xl font-bold text-orange-600 mb-2">चारा प्रायोजित करें</h3>
+          <p className="text-gray-700 mb-4">
+            हमारी गायों की दैनिक आहार आवश्यकताओं के लिए योगदान दें।<br />
+            <strong>प्रक्रिया:</strong><br />
+            1. संपर्क फॉर्म से राशि/सामग्री चुनें।<br />
+            2. टीम आपको भुगतान/सामग्री जमा करने की प्रक्रिया बताएगी।<br />
+            3. आपको प्रायोजन की रसीद मिलेगी।
+          </p>
+        </>
+      )}
+      {openModal === 3 && (
+        <>
+          <h3 className="text-xl font-bold text-green-600 mb-2">जागरूकता फैलाएं</h3>
+          <p className="text-gray-700 mb-4">
+            सोशल मीडिया और अपने समुदाय में हमारे काम को साझा करें।<br />
+            <strong>प्रक्रिया:</strong><br />
+            1. हमारे सोशल मीडिया पेज फॉलो करें।<br />
+            2. पोस्ट/वीडियो शेयर करें।<br />
+            3. जागरूकता अभियान में भाग लें।
+          </p>
+        </>
+      )}
+    </div>
+  </div>
+)}
         {/* Contact Us Section */}
         <section id="contact" className="py-16 bg-gradient-to-r from-orange-50 to-green-50" data-aos="fade-up">
           <div className="container">

@@ -892,9 +892,13 @@ useEffect(() => {
                   <p className="text-gray-600 mb-4">
                     एक गाय की पूरी देखभाल को प्रायोजित करें और अपनी गोद ली गई गाय के बारे में नियमित अपडेट प्राप्त करें।
                   </p>
-                  <a href="#contactForm"><Button variant="outline" className="border-green-600 text-white bg-green-600 hover:bg-green-50 w-full">
+                  <Button
+  variant="outline"
+  className="border-green-600 text-white bg-green-600 hover:bg-green-50 w-full"
+  onClick={() => setOpenModal(1)} // Use 0, 1, 2, 3 for each card
+>
                     अभी गोद लें
-                  </Button></a>
+                  </Button>
                 </CardContent>
               </Card>
 
@@ -907,9 +911,13 @@ useEffect(() => {
                   <p className="text-gray-600 mb-4">
                     एक बार या नियमित आधार पर हमारी गायों की दैनिक आहार आवश्यकताओं के लिए योगदान दें।
                   </p>
-                  <a href="#contactForm"><Button variant="outline" className="border-orange-600 text-white bg-orange-600 hover:bg-orange-50 w-full">
+                  <Button
+  variant="outline"
+  className="border-orange-600 text-white bg-orange-600 hover:bg-orange-50 w-full"
+  onClick={() => setOpenModal(2)} // Use 0, 1, 2, 3 for each card
+>
                     अभी प्रायोजित करें
-                  </Button></a>
+                  </Button>
                 </CardContent>
               </Card>
 
@@ -922,9 +930,13 @@ useEffect(() => {
                   <p className="text-gray-600 mb-4">
                     सोशल मीडिया और अपने समुदाय में हमारे काम को साझा करके गौ संरक्षण का संदेश फैलाने में हमारी मदद करें।
                   </p>
-                  <a href="#contactForm"><Button variant="outline" className="border-green-600 text-white bg-green-600 hover:bg-green-50 w-full">
+                  <Button
+  variant="outline"
+  className="border-green-600 text-white bg-green-600 hover:bg-green-50 w-full"
+  onClick={() => setOpenModal(3)} // Use 0, 1, 2, 3 for each card
+>
                     कैसे करें जानें
-                  </Button></a>
+                  </Button>
                 </CardContent>
               </Card>
             </div>
@@ -952,6 +964,7 @@ useEffect(() => {
             2. हमारी टीम आपसे संपर्क करेगी।<br />
             3. प्रशिक्षण के बाद सेवा शुरू करें।
           </p>
+          <button>jscihec</button>
         </>
       )}
       {openModal === 1 && (

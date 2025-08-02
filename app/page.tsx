@@ -232,7 +232,7 @@ useEffect(() => {
           
         </p>
         <Button
-          className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-6 text-lg rounded-full "
+          className="bg-gray-800 hover:bg-orange-700 text-white px-8 py-6 text-lg rounded-full "
           onClick={() =>
             document.getElementById('donate')?.scrollIntoView({ behavior: 'smooth' })
           }

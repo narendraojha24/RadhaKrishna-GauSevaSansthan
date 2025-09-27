@@ -189,7 +189,7 @@ useEffect(() => {
               संपर्क
             </Link>
             <Button
-              className="mt-2 bg-orange-600 hover:bg-orange-700 text-white"
+              className="mt-2 bg-orange-600 hover:bg-orange-800 text-white"
               onClick={() => {
                 document.getElementById("mobile-menu")?.classList.add("hidden")
                 document.getElementById("donate")?.scrollIntoView({ behavior: "smooth" })

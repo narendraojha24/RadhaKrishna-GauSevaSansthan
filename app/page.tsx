@@ -183,7 +183,7 @@ useEffect(() => {
             </Link>
             <Link
               href="#contact"
-              className="py-2 text-gray-800 hover:text-orange-600"
+              className="py-2 text-gray-700 hover:text-orange-600"
               onClick={() => document.getElementById("mobile-menu")?.classList.add("hidden")}
             >
               संपर्क

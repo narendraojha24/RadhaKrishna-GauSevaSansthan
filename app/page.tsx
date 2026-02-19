@@ -1118,14 +1118,14 @@ useEffect(() => {
       <label htmlFor="name" className="text-sm font-medium">
         आपका नाम
       </label>
-      <Input id="name" name="Name" placeholder="अपना नाम दर्ज करें" requiorange />
+      <Input id="name" name="Name" placeholder="अपना नाम दर्ज करें" required />
     </div>
 
     <div className="space-y-2">
       <label htmlFor="email" className="text-sm font-medium">
         ईमेल पता
       </label>
-      <Input id="email" name="Email" type="email" placeholder="अपना ईमेल दर्ज करें" requiorange />
+      <Input id="email" name="Email" type="email" placeholder="अपना ईमेल दर्ज करें" required />
     </div>
   </div>
 
@@ -1133,14 +1133,14 @@ useEffect(() => {
     <label htmlFor="subject" className="text-sm font-medium">
       विषय
     </label>
-    <Input id="subject" name="Subject" placeholder="विषय दर्ज करें" requiorange />
+    <Input id="subject" name="Subject" placeholder="विषय दर्ज करें" required />
   </div>
 
   <div className="space-y-2">
     <label htmlFor="message" className="text-sm font-medium">
       संदेश
     </label>
-    <Textarea id="message" name="Message" placeholder="अपना संदेश दर्ज करें" className="min-h-[120px]" requiorange />
+    <Textarea id="message" name="Message" placeholder="अपना संदेश दर्ज करें" className="min-h-[120px]" required />
   </div>
 
   <Button className="w-full bg-orange-600 hover:bg-orange-700" type="submit">

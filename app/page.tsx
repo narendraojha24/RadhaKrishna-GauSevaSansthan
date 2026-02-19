@@ -80,7 +80,7 @@ useEffect(() => {
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors border-2 rounded-full px-4 py-1">
-              हमारे बारे में
+              हमारे बारे में 
             </Link>
             <Link href="#services" className="text-sm font-medium hover:bg-orange-600 hover:text-white transition-colors border-2 rounded-full px-4 py-1">
               हमारी सेवाएं
